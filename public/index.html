@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roya HTML5 Template">
+
+  <title>Roya Digital Agency</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/master-digital-agency.css">
+</head>
+
+<body class="font-heading-recoleta-medium">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="A" class="characters">R</span>
+          <span data-text="O" class="characters">O</span>
+          <span data-text="Y" class="characters">Y</span>
+          <span data-text="A" class="characters">A</span> 
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="light">light</button>
+          <button data-mode="dark">dark</button>
+        </div>
+      </div>
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Language Support</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Layout</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width">Full Width</button>
+          <button data-mode="box-layout">Box Layout</button>
+        </div>
+      </div>
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+            <ul>
+              <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+              <li><a href="">27 Division St, <br>
+                  New York, NY 10002, USA</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <p class="title">Follow Me</p>
+            <div class="offcanvas-3__social-links">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="#" data-lang="home">home</a></li>
+            <li><a href="#" data-lang="about">about</a></li>
+            <li><a href="#" data-lang="Services">services</a></li>
+            <li><a href="#" data-lang="service_details">service details</a></li>
+            <li><a href="#" data-lang="projects">projects</a></li>
+            <li><a href="#" data-lang="project_details">project details</a></li>
+            <li><a href="#" data-lang="team">team</a></li>
+            <li><a href="#" data-lang="team_details">team details</a></li>
+            <li><a href="#" data-lang="career">career</a></li>
+            <li><a href="#" data-lang="career_details">career details</a></li>
+            <li><a href="#" data-lang="faq">faq</a></li>
+            <li><a href="#">404 page</a></li>
+            <li><a href="#" data-lang="blog">blog</a></li>
+            <li><a href="#" data-lang="blog_details">blog details</a></li>
+            <li><a href="#" data-lang="Contact">Contact</a></li>
+
+                         <!-- <div class="language-switcher">
+                <button
+                  id="langToggle"
+                  class="lang-btn"
+                  onclick="toggleLanguage()"
+                >
+                  <i class="fas fa-globe"></i>
+                  <span class="lang-text">AR</span>
+                </button>
+              </div>-->
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
+  <!-- Header area start -->
+  <header class="header-area pos-abs zi-9">
+    <div class="container container-large">
+      <div class="header-area__inner">
+        <div class="header__logo">
+          <a href="#">
+            <img class="normal-logo show-light" src="assets/imgs/logo/logo.png" alt="Site Logo">
+            <img class="normal-logo show-dark" src="assets/imgs/logo/logo-light.png" alt="Site Logo">
+          </a>
+        </div>
+        <div class="header__nav pos-center">
+          <nav class="main-menu">
+            <ul>
+              <li class="menu-item-has-children">
+                <a href="#" data-lang="Services">Services</a>
+                <ul class="dp-menu col-2">
+                  <li><a href="#" data-lang="Branding">Branding</a></li>
+                  <li><a href="#" data-lang="Web_development">Web Development</a></li>
+                  <li><a href="#" data-lang="SEO">SEO</a></li>
+                  <li><a href="#" data-lang="Social_media_management">Social Media Management</a></li>
+                  <li><a href="#" data-lang="Media_production">Media Production</a></li>
+                  <li><a href="#" data-lang="Roya">Roya + </a></li>
+                  <li><a href="#" data-lang="Event_management">Event Management</a></li>
+                  <li><a href="#" data-lang="ContentCreation">Content Creation</a></li> 
+                  <li><a href="#" data-lang="PerformanceMarketing">Performance Marketing</a></li> 
+                  <li><a href="#" data-lang="Photography">Photography </a></li>
+                  <li><a href="#" data-lang="CreativeCampaigns">Creative Campaigns</a></li>  
+                </ul>
+              </li>
+              <li><a href="#" data-lang="about">about</a></li>
+              <li class="menu-item-has-children">
+                <a href="#" data-lang="portfolio">portfolio</a>
+                <ul class="dp-menu">
+                  <li><a href="#" data-lang="PortfolioCarousel">Portfolio Carousel</a></li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#" data-lang="Pages">Pages</a>
+                <ul class="dp-menu">
+                  <li class="menu-item-has-children">
+                    <a href="#" data-lang="service_pages">service pages</a>
+                    <ul>
+                      <li><a href="#" data-lang="Services">services</a></li>
+                      <li><a href="#" data-lang="service_details">service details</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#" data-lang="project_pages">project pages</a>
+                    <ul>
+                      <li><a href="#" data-lang="project">project</a></li>
+                      <li><a href="#" data-lang="project_details">project details</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#" data-lang="team_pages">team pages</a>
+                    <ul>
+                      <li><a href="#" data-lang="team">team</a></li>
+                      <li><a href="#" data-lang="team_details">team details</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#" data-lang="career_pages">career pages</a>
+                    <ul>
+                      <li><a href="#" data-lang="career">career</a></li>
+                      <li><a href="#" data-lang="career_details">career details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" data-lang="faq">faq</a></li>
+                  <li><a href="404.html">404 page</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" data-lang="blog">blog</a>
+                <ul class="dp-menu">
+                  <li><a href="#" data-lang="blog">blog</a></li>
+                  <li><a href="#" data-lang="blog_details">blog details</a></li>
+                </ul>
+              </li>
+              <li><a href="#" data-lang="Contact">Contact</a></li>
+
+                      <!--      <div class="language-switcher">
+                <button
+                  id="langToggle"
+                  class="lang-btn"
+                  onclick="toggleLanguage()">
+                  <i class="fas fa-globe"></i>
+                  <span class="lang-text">AR</span>
+                </button>
+              </div>-->
+            </ul>
+          </nav>
+        </div>
+        <div class="header-search" data-bs-toggle="modal" data-bs-target="#search-template">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="header__button d-none d-sm-inline-block">
+          <a href="#" class="wc-btn wc-btn-primary btn-text-flip" data-bs-toggle="modal"
+            data-bs-target="#signupform"> <span data-text="Get started" data-lang="Get_started">Get started</span></a>
+        </div>
+        <div class="header__navicon d-xl-none">
+          <button onclick="showCanvas3()" class="open-offcanvas">
+            <i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper digital-agencey">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <main>
+
+          <!-- intro area start  -->
+          <section class="intro-area">
+            <div class="container container-large">
+              <div class="intro-grid">
+                <div class="intro-info">
+                  <h1 class="highlight-text has_fade_anim" data-fade-from="left">Building Outstanding Design &
+                    Development</h1>
+                  <img class="arrow-button show-light" src="assets/imgs/shape/img-s-2.webp" alt="arrow-button">
+                  <img class="arrow-button show-dark" src="assets/imgs/shape/img-s-2-light.webp" alt="arrow-button">
+                  <div class="counter-box has_fade_anim" data-fade-from="left" data-delay="0.45">
+                    <h2 class="counter-title">2.5m</h2>
+                    <p class="text">We happy customer <br>
+                      word-wide</p>
+                    <img class="show-light" src="assets/imgs/team/team-group.webp" alt="team-group">
+                    <img class="show-dark" src="assets/imgs/team/team-group-dark.webp" alt="team-group">
+                  </div>
+                </div>
+                <div class="intro-content">
+                  <h2 class="intro-title has_char_anim" data-translateX="70">We Think <span class="small-hypen"></span>
+                    & Solve.</h2>
+                  <p class="text has_word_anim" data-delay="0.30">We felt strongly that design was more than pretty
+                    pictures, it was a powerful tool
+                    that could really transform business.</p>
+                  <div class="btn-wrap has_fade_anim" data-fade-from="bottom" data-delay="0.45">
+                    <a href="#" class="wc-btn wc-btn-primary btn-text-flip"><span data-text="Learn more">Learn
+                        more</span></a>
+                  </div>
+                </div>
+                <div class="intro-thumb">
+                  <div class="main-thumb">
+                    <img class="main-image" src="assets/imgs/gallery/img-r-1.webp" alt="intro-main-image">
+                    <img class="shape-1 show-light" src="assets/imgs/shape/img-r-1.webp" alt="shape">
+                    <img class="shape-1 show-dark" src="assets/imgs/shape/img-r-1-light.webp" alt="shape">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- intro area end  -->
+
+          <!-- about area start  -->
+          <section class="about-area section-spacing">
+            <div class="container">
+              <div class="section-heading">
+                <h2 class="section-title has_fade_anim">Beyond visions
+                  within reach</h2>
+                <p class="section-desc has_fade_anim">From traditional PR and thought leadership campaigns to
+                  storytelling and
+                  creative social media management we’ve got you covered. Something is not your average order-taking
+                  vendor. We are proud to be the go-to partner for some of the world’s biggest agencies and brands
+                  because they trust our expertise</p>
+              </div>
+              <div class="about-thumb has_fade_anim" data-fade-from="top" data-ease="bounce">
+                <img class="show-light" src="assets/imgs/gallery/img-r-2.webp" alt="circle-shape">
+                <img class="show-dark" src="assets/imgs/gallery/img-r-2-light.webp" alt="circle-shape">
+              </div>
+            </div>
+          </section>
+          <!-- about area end  -->
+
+          <!-- project area start  -->
+          <section class="project-area section-spacing">
+            <div class="container">
+              <div class="projects-grid">
+                <div class="project-item has_fade_anim">
+                  <div class="thumb">
+                    <a href="#" class="wc-btn wc-btn-primary btn-text-flip"><span
+                        data-text="View project" data-lang="View_project">View project</span></a>
+                    <img src="assets/imgs/brand/brand_img/alHigaz_power.png" data-fade-from="left" alt="project-thumb">
+                  </div>
+                  <div class="project-content">
+                    <h2 class="title" data-lang="alHigaz_power">Al Higaz Power</h2>
+                    <!--<p class="text">Design - 2019</p>-->
+                  </div>
+                </div>
+                <div class="project-item has_fade_anim">
+                  <div class="thumb">
+                    <a href="#" class="wc-btn wc-btn-primary btn-text-flip"><span
+                        data-text="View project" data-lang="View_project">View project</span></a>
+                    <img src="assets/imgs/brand/brand_img/atqen.png" alt="project-thumb">
+                  </div>
+                  <div class="project-content">
+                    <h2 class="title" data-lang="atqen">Atqen</h2>
+                    <!--<p class="text">Design - 2019</p>-->
+                  </div>
+                </div>
+                <div class="project-item has_fade_anim">
+                  <div class="thumb">
+                    <a href="#" class="wc-btn wc-btn-primary btn-text-flip"><span
+                        data-text="View project" data-lang="View_project">View project</span></a>
+                    <img src="assets/imgs/brand/brand_img/juthor.png" alt="project-thumb">
+                  </div>
+                  <div class="project-content">
+                    <h2 class="title" data-lang="juthor">Juthoor</h2>
+                    <!--<p class="text">Design - 2019</p>-->
+                  </div>
+                </div>
+                <div class="project-item has_fade_anim" data-delay="0.30">
+                  <div class="thumb">
+                    <a href="#" class="wc-btn wc-btn-primary btn-text-flip"><span
+                        data-text="View project" data-lang="View_project">View project</span></a>
+                    <img src="assets/imgs/brand/brand_img/osos.png" alt="project-thumb">
+                  </div>
+                  <div class="project-content">
+                    <h2 class="title" data-lang="osos">Osos Najd</h2>
+                    <!--<p class="text">Design - 2019</p>-->
+                  </div>
+                </div>
+                <div class="project-item has_fade_anim">
+                  <div class="thumb">
+                    <a href="#" class="wc-btn wc-btn-primary btn-text-flip"><span
+                        data-text="View project" data-lang="View_project">View project</span></a>
+                    <img src="assets/imgs/brand/brand_img/sodf.png" alt="project-thumb">
+                  </div>
+                  <div class="project-content">
+                    <h2 class="title" data-lang="Sadaf">Sadaf</h2>
+                    <!--<p class="text">Design - 2019</p>-->
+                  </div>
+                </div>
+                <div class="project-item has_fade_anim">
+                  <div class="thumb">
+                    <a href="#" class="wc-btn wc-btn-primary btn-text-flip"><span
+                        data-text="View project" data-lang="View_project">View project</span></a>
+                    <img src="assets/imgs/brand/brand_img/zalila.png" alt="project-thumb">
+                  </div>
+                  <div class="project-content">
+                    <h2 class="title" data-lang="Zalilah">Zalilah</h2>
+                    <!--<p class="text">Design - 2019</p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="btn-wrap has_fade_anim">
+                <a href="#" class="wc-btn-primary btn-text-flip bordered"><span data-text="View all works" data-lang="View_works">View
+                    all works</span></a>
+              </div>
+            </div>
+          </section>
+          <!-- project area end  -->
+
+          <!-- counter area start  -->
+          <section class="counter-area">
+            <div class="container">
+              <div class="counter-area-inner section-spacing">
+                <div class="counters-grid">
+                  <div class="counter-item has_fade_anim" data-fade-from="left">
+                    <h2 class="title wc-counter">25k</h2>
+                    <p class="text">Project <br> completed</p>
+                  </div>
+                  <div class="counter-item has_fade_anim" data-fade-from="left">
+                    <h2 class="title wc-counter">8k</h2>
+                    <p class="text">Happy <br> customers</p>
+                  </div>
+                  <div class="counter-item has_fade_anim" data-fade-from="left">
+                    <h2 class="title wc-counter">15</h2>
+                    <p class="text">Years <br> experiences</p>
+                  </div>
+                  <div class="counter-item has_fade_anim" data-fade-from="left">
+                    <h2 class="title wc-counter">98</h2>
+                    <p class="text">Awards <br> achievement</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- counter area end  -->
+
+          <!-- testimonial area start  -->
+          <section class="testimonial-area">
+            <div class="container">
+              <div class="testimonial-area-inner section-spacing">
+                <div class="section-heading">
+                  <h2 class="section-title has_fade_anim">Testimonials</h2>
+                </div>
+                <div class="testimonial-inner has_fade_anim">
+                  <div class="swiper testimonial-active">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/imgs/icon/quote-2.webp" alt="quote">
+                          <p class="text">When we talk about Alts, we do not mean a typical business partner, but rather
+                            a
+                            team that collaborates with us daily, always there for us when we encounter difficulties and
+                            celebrate achievements. We see in Alts our best ally for success!</p>
+                          <div class="meta">
+                            <img src="assets/imgs/client/img-s-1.webp" alt="">
+                            <div class="content">
+                              <h3 class="name">Charry Maron</h3>
+                              <p class="post">Developer</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/imgs/icon/quote-2.webp" alt="quote">
+                          <p class="text">When we talk about Alts, we do not mean a typical business partner, but rather
+                            a
+                            team that collaborates with us daily, always there for us when we encounter difficulties and
+                            celebrate achievements. We see in Alts our best ally for success!</p>
+                          <div class="meta">
+                            <img src="assets/imgs/client/img-s-1.webp" alt="">
+                            <div class="content">
+                              <h3 class="name">Charry Maron</h3>
+                              <p class="post">Developer</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/imgs/icon/quote-2.webp" alt="quote">
+                          <p class="text">When we talk about Alts, we do not mean a typical business partner, but rather
+                            a
+                            team that collaborates with us daily, always there for us when we encounter difficulties and
+                            celebrate achievements. We see in Alts our best ally for success!</p>
+                          <div class="meta">
+                            <img src="assets/imgs/client/img-s-1.webp" alt="">
+                            <div class="content">
+                              <h3 class="name">Charry Maron</h3>
+                              <p class="post">Developer</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/imgs/icon/quote-2.webp" alt="quote">
+                          <p class="text">When we talk about Alts, we do not mean a typical business partner, but rather
+                            a
+                            team that collaborates with us daily, always there for us when we encounter difficulties and
+                            celebrate achievements. We see in Alts our best ally for success!</p>
+                          <div class="meta">
+                            <img src="assets/imgs/client/img-s-1.webp" alt="">
+                            <div class="content">
+                              <h3 class="name">Charry Maron</h3>
+                              <p class="post">Developer</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- testimonial area end  -->
+
+          <!-- service area start  -->
+          <section class="service-area section-spacing">
+            <div class="container">
+              <div class="service-top-wrapper">
+                <div class="section-heading">
+                  <h2 class="section-title has_fade_anim">Our exclusive <br>
+                    services</h2>
+                </div>
+                <div class="content">
+                  <p class="text has_fade_anim" data-fade-from="left">Whether it's crafting a visually stunning brand
+                    identity,designing immersive digital
+                    experiences, or developing strategic marketing campaigns</p>
+                  <a href="#" class="wc-btn wc-btn-underline btn-text-flip has_fade_anim"
+                    data-fade-from="left"><span data-text="Learn more">Learn more</span></a>
+                </div>
+              </div>
+              <div class="services-wrapper-box">
+                <div class="services-grid">
+                  <div class="has_fade_anim" data-fade-from="bottom" data-delay="0.15">
+                    <a href="#">
+                      <div class="service-item">
+                        <div class="icon">
+                          <img class="show-light" src="assets/imgs/icon/icon-s-1.webp" alt="service-icon">
+                          <img class="show-dark" src="assets/imgs/icon/icon-s-1-light.webp" alt="service-icon">
+                        </div>
+                        <h2 class="title">Interaction <br> Design</h2>
+                        <ul class="service-features">
+                          <li>User Interface</li>
+                          <li>User Experience</li>
+                          <li>Design System</li>
+                          <li>Wireframe</li>
+                          <li>Prototype</li>
+                          <li>Website & Mobile App</li>
+                          <li>IOS + Android</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="has_fade_anim" data-fade-from="bottom" data-delay="0.30">
+                    <a href="#">
+                      <div class="service-item">
+                        <div class="icon">
+                          <img class="show-light" src="#" alt="service-icon">
+                          <img class="show-dark" src="#" alt="service-icon">
+                        </div>
+                        <h2 class="title">Branding <br> Design</h2>
+                        <ul class="service-features">
+                          <li>User Interface</li>
+                          <li>User Experience</li>
+                          <li>Design System</li>
+                          <li>Wireframe</li>
+                          <li>Prototype</li>
+                          <li>Website & Mobile App</li>
+                          <li>IOS + Android</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="has_fade_anim" data-fade-from="bottom" data-delay="0.45">
+                    <a href="#">
+                      <div class="service-item">
+                        <div class="icon">
+                          <img class="show-light" src="assets/imgs/icon/icon-s-3.webp" alt="service-icon">
+                          <img class="show-dark" src="assets/imgs/icon/icon-s-3-light.webp" alt="service-icon">
+                        </div>
+                        <h2 class="title">Design & <br> Development</h2>
+                        <ul class="service-features">
+                          <li>User Interface</li>
+                          <li>User Experience</li>
+                          <li>Design System</li>
+                          <li>Wireframe</li>
+                          <li>Prototype</li>
+                          <li>Website & Mobile App</li>
+                          <li>IOS + Android</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="has_fade_anim" data-fade-from="bottom" data-delay="0.60">
+                    <a href="#">
+                      <div class="service-item">
+                        <div class="icon">
+                          <img class="show-light" src="assets/imgs/icon/icon-s-4.webp" alt="service-icon">
+                          <img class="show-dark" src="assets/imgs/icon/icon-s-4-light.webp" alt="service-icon">
+                        </div>
+                        <h2 class="title">eCommerce <br> Development</h2>
+                        <ul class="service-features">
+                          <li>User Interface</li>
+                          <li>User Experience</li>
+                          <li>Design System</li>
+                          <li>Wireframe</li>
+                          <li>Prototype</li>
+                          <li>Website & Mobile App</li>
+                          <li>IOS + Android</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- service area end  -->
+
+          <!-- awards area start  -->
+          <section class="awards-area">
+            <div class="area-bg">
+              <img src="assets/imgs/gallery/img-s-6.webp" alt="gallery image">
+            </div>
+            <div class="container">
+              <div class="awards-area-inner section-spacing">
+                <div class="section-header">
+                  <div class="section-title-wrapper">
+                    <div class="subtitle-wrapper">
+                      <span class="section-subtitle has-right-line has_fade_anim">Awards</span>
+                    </div>
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">We believe in <br>
+                        quality, not quantity</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-content">
+                  <div class="text-wrapper">
+                    <p class="text has_fade_anim" data-fade-from="left">Easily create truly responsive components while
+                      deploying production-ready code. Our
+                      experts utilize tech trends, shaping designs that surpass expectations with innovative design way.
+                    </p>
+                  </div>
+                  <div class="awards-list has_fade_anim">
+                    <ul>
+                      <li><img src="assets/imgs/gallery/img-s-7.webp" alt="award image"></li>
+                      <li><img src="assets/imgs/gallery/img-s-8.webp" alt="award image"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- awards area end  -->
+
+          <!-- client area start  -->
+          <div class="client-area has_fade_anim">
+            <div class="container">
+              <div class="client-area-inner section-spacing-top">
+                <div class="client-area-text">
+                  <h2 class="text">We worked with largest
+                    global brands</h2>
+                </div>
+                <div class="clients-wrapper-box">
+                  <div class="clients-wrapper">
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-1.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-1-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-2.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-2-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-3.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-3-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-4.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-4-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-5.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-5-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-6.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-6-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-7.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-7-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-8.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-8-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-9.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-9-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-10.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-10-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-11.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-11-light.webp" alt="client image">
+                    </div>
+                    <div class="client-box">
+                      <img class="show-light" src="assets/imgs/brand/img-s-12.webp" alt="client image">
+                      <img class="show-dark" src="assets/imgs/brand/img-s-12-light.webp" alt="client image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- client area end  -->
+
+          <!-- blog area start  -->
+          <section class="blog-area">
+            <div class="container">
+              <div class="blog-area-inner section-spacing">
+                <div class="section-header">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">Journal</h2>
+                    </div>
+                  </div>
+                  <div class="btn-wrapper has_fade_anim" data-delay="0.30" data-fade-from="right">
+                    <a href="#" class="wc-btn wc-btn-underline btn-text-flip"> <span
+                        data-text="Read all post">Read all post</span></a>
+                  </div>
+                </div>
+                <div class="blog-wrapper-box">
+                  <div class="blog-wrapper">
+                    <div class="has_fade_anim" data-fade-from="bottom" data-delay="0.15">
+                      <a href="#">
+                        <article class="blog">
+                          <div class="thumb">
+                            <img src="assets/imgs/blog/img-s-11.webp" alt="blog image">
+                          </div>
+                          <div class="content-wrapper">
+                            <div class="content">
+                              <h2 class="title">A simple guide to retrieval auto generated read content models</h2>
+                              <div class="meta">
+                                <span class="tag">Branding</span>
+                                <span class="date has-left-line">14 Jan 2024</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </a>
+                    </div>
+                    <div class="has_fade_anim" data-fade-from="bottom" data-delay="0.30">
+                      <a href="#">
+                        <article class="blog">
+                          <div class="thumb">
+                            <img src="assets/imgs/blog/img-s-1.webp" alt="blog image">
+                          </div>
+                          <div class="content-wrapper">
+                            <div class="content">
+                              <h2 class="title">The complex but awesome CSS border-image property
+                                for web design</h2>
+                              <div class="meta">
+                                <span class="tag">Design</span>
+                                <span class="date has-left-line">10 Jan 2024</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </a>
+                    </div>
+                    <div class="has_fade_anim" data-fade-from="bottom" data-delay="0.45">
+                      <a href="#">
+                        <article class="blog">
+                          <div class="thumb">
+                            <img src="assets/imgs/blog/img-s-2.webp" alt="blog image">
+                          </div>
+                          <div class="content-wrapper">
+                            <div class="content">
+                              <h2 class="title">Refining your mobile onboarding experience using visual analytics</h2>
+                              <div class="meta">
+                                <span class="tag">Development</span>
+                                <span class="date has-left-line">5 Jan 2024</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- blog area end  -->
+
+          <!-- cta area start  -->
+          <section class="cta-area">
+            <div class="container">
+              <div class="cta-area-inner section-spacing">
+                <div class="section-content">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">Let’s start your <br>
+                        journey with Roya</h2>
+                    </div>
+                  </div>
+                  <div class="btn-wrapper has_fade_anim">
+                    <a href="#" class="wc-btn wc-btn-primary btn-text-flip"> <span
+                        data-text="Let’s get in touch">Let’s get in touch</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- cta area end  -->
+
+        </main>
+
+        <!-- footer area start  -->
+        <footer class="footer-area">
+          <div class="container">
+            <div class="footer-area-inner section-spacing-top">
+              <div class="footer-widget-wrapper">
+                <div class="footer-logo">
+                  <a href="#"><img src="assets/imgs/logo/logo_roya.png" alt="site-logo"></a>
+                </div>
+              </div>
+              <div class="footer-widget-wrapper">
+                <h2 class="title" data-lang="Services">Service</h2>
+                <ul class="footer-nav-list">
+                  <li><a href="#" data-lang="Marketing">Marketing Consulting</a></li>
+                  <li><a href="#" data-lang="Branding">Branding</a></li>
+                  <li><a href="#" data-lang="Social_media_management">Social Media Management</a></li>
+                  <li><a href="#" data-lang="PerformanceMarketing">Performance Marketing</a></li>
+                  <li><a href="#" data-lang="web_development">Web Development</a></li>
+                  <li><a href="#" data-lang="SEO">SEO</a></li>
+                  <li><a href="#" data-lang="Offline_Campaigns">Offline Campaigns</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-wrapper">
+                <h2 class="title" data-lang="Company">Company</h2>
+                <ul class="footer-nav-list">
+                  <li><a href="#" data-lang="home">Home</a></li>
+                  <li><a href="#" data-lang="Agency">Agency</a></li>
+                  <li><a href="#" data-lang="Achievement">Achievement</a></li>
+                  <li><a href="#" data-lang="career">Career</a></li>
+                  <li><a href="#" data-lang="Contact">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-wrapper newsletter">
+                <h2 class="title" data-lang="Newsletter">Newsletter</h2>
+                <div class="newsletter-text">
+                  <p class="text" data-lang="newsletter_text">Feel free to reach out if you want to collaborate with us, or simply have a chat.
+                  </p>
+                </div>
+                <form action="#" class="subscribe-form">
+                  <div class="input-field">
+                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="footer-widget-wrapper">
+                <h2 class="title" data-lang="footer_location">Kingdom of Saudi Arabia</h2>
+                <!--<ul class="footer-nav-list">
+                  <li><a class="text-underline location" href="#">1772 Street Charleston,
+                      New York</a></li>
+                  <li><a href="tel:+1287-360-633">+1 287-360-633</a></li>
+                  <li><a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></li>
+                </ul>-->
+              </div>
+              <div class="footer-widget-wrapper">
+                <h2 class="title" data-lang="footer_location1">Riyadh</h2>
+                <!--<ul class="footer-nav-list">
+                  <li><a class="text-underline location" href="#">1772 Street Charleston,
+                      New York</a></li>
+                  <li><a href="tel:+1287-360-633">+1 287-360-633</a></li>
+                  <li><a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></li>
+                </ul>-->
+              </div>
+              <div class="footer-widget-wrapper">
+                <h2 class="title" data-lang="Follow">Follow Us</h2>
+                <ul class="social-links">
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="copyright-area">
+            <div class="container">
+              <div class="copyright-area-inner">
+                <div class="copyright-text">
+                  <p class="text">© 2024-25 <a href="https://themeforest.net/user/crowdytheme"
+                      target="_blank">crowdyTheme</a> Agency
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer area end  -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/translation.js"></script>
+
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+  <script>
+    // testimonial_active
+    if ('.testimonial-active') {
+      var testimonial_slider_active = new Swiper(".testimonial-active", {
+        slidesPerView: 1,
+        loop: false,
+        autoplay: false,
+        spaceBetween: 60,
+        speed: 3000,
+        pagination: {
+          el: '.testimonial-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+      });
+    }
+  </script>
+</body>
+
+</html>
