@@ -139,10 +139,26 @@ function setLanguage(language) {
         const translationId = element.getAttribute("data-lang");
         element.textContent = translation[language][translationId];
     });
+
+    //////////////////////////////
+    set_change();
+
 };
 
+function set_change(){
+    const elements = document.querySelectorAll(".a");
+    elements.forEach((el) => {
+        if(currentLang === 'ar'){
+            el.classList.add('a_rtl');
+            el.classList.remove('a_ltr');
+        } else {
+            el.classList.add('a_ltr');
+            el.classList.remove('a_rtl');
+        }
+    });
+}
 
-// Language switching functionality
+
 var currentLang = localStorage.getItem('language') || 'en';
 document.documentElement.lang = currentLang;
 document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
@@ -153,6 +169,10 @@ function toggleLanguage() {
     localStorage.setItem('language', currentLang);
     document.documentElement.lang = currentLang;
     document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+    //////////////////////////////////////
+    set_change();
+
     updateLanguageDisplay();
     translatePage();
 }
@@ -178,6 +198,7 @@ function translatePage() {
         }
     });
 }
+
 
 // Initial translation
 document.addEventListener('DOMContentLoaded', () => {
