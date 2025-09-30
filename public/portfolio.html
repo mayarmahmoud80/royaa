@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="assets/vendor/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/components.js"></script>
+</head>
+
+
+<body class="body-wrapper dark body-page-inner font-heading-sequelsans-romanbody" style="padding-top: 80px;">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- side toggle start -->
+  <aside class="fix">
+  </aside>
+  <div class="offcanvas-overlay"></div>
+  <!-- side toggle end -->
+
+  <!-- Header area start -->
+<header class="header-area-2">
+</header>
+  <!-- Header area end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <main>
+
+        <!-- page title area start  -->
+        <section class="page-title-area">
+          <div class="container large">
+            <div class="page-title-area-inner section-spacing-top">
+              <div class="page-title-wrapper">
+                <h2 class="page-title fade-anim">Projects</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- page title area end  -->
+
+        <!-- work area start  -->
+        <section class="work-area-work-page">
+          <div class="work-area-work-page-inner">
+            <div class="works-wrapper-box">
+              <div class="container large">
+                <div class="works-wrapper-6" id="portfolio-projects">
+                  <!-- Projects will be loaded dynamically from projects.json -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- work area end  -->
+
+      </main>
+
+      <!-- footer area start  -->
+      <footer class="footer-area-inner-page section-spacing-top">
+      </footer>
+      <!-- footer area end  -->
+
+    </div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery-3.7.1.min.js"></script>
+  <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.magnific-popup.min.js"></script>
+  <script src="assets/vendor/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/ScrollSmoother.min.js"></script>
+  <script src="assets/vendor/ScrollToPlugin.min.js"></script>
+  <script src="assets/vendor/SplitText.min.js"></script>
+  <script src="assets/vendor/TextPlugin.js"></script>
+  <script src="assets/vendor/customEase.js"></script>
+  <script src="assets/vendor/Flip.min.js"></script>
+  <script src="assets/vendor/jquery.meanmenu.min.js"></script>
+  <script src="assets/vendor/backToTop.js"></script>
+  <script src="assets/vendor/matter.js"></script>
+  <script src="assets/vendor/throwable.js"></script>
+  <script src="assets/js/magiccursor.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Portfolio Projects Dynamic Content -->
+  <script>
+    // Load all projects on portfolio page
+    async function loadPortfolioProjects() {
+      try {
+        const response = await fetch('assets/data/projects.json');
+        const projects = await response.json();
+        
+        const projectsContainer = document.getElementById('portfolio-projects');
+        
+        if (projectsContainer && projects.length > 0) {
+          projectsContainer.innerHTML = '';
+          
+          projects.forEach(project => {
+            const projectHTML = `
+              <div class="work-box fade-anim">
+                <div class="thumb">
+                  <div class="image scale" data-cursor-text="View Details" data-cursor-text-red>
+                    <a href="portfolio-details.html?id=${project.id}"><img src="${project.banner}" alt="${project.title}"></a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3 class="title"><a href="portfolio-details.html?id=${project.id}">${project.title}</a></h3>
+                  <div class="meta">
+                    <span class="tag">${project.category}</span>
+                    <span class="date">(${project.year})</span>
+                  </div>
+                </div>
+              </div>
+            `;
+            projectsContainer.innerHTML += projectHTML;
+          });
+        }
+      } catch (error) {
+        console.error('Error loading portfolio projects:', error);
+        // Fallback to show static content if JSON loading fails
+      }
+    }
+    
+    // Load projects when page loads
+    document.addEventListener('DOMContentLoaded', loadPortfolioProjects);
+  </script>
+
+</body>
+
+</html>

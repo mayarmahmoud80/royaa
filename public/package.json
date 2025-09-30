@@ -1,0 +1,41 @@
+{
+  "name": "roya-website",
+  "version": "1.0.0",
+  "description": "Roya website - Digital agency portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "firebase serve --only hosting",
+    "build": "echo 'Static site - no build step required'",
+    "deploy": "firebase deploy --only hosting:roya-profile-website-prod",
+    "deploy:all": "firebase deploy",
+    "firebase:login": "firebase login",
+    "firebase:init": "firebase init",
+    "firebase:serve": "firebase serve",
+    "firebase:emulators": "firebase emulators:start",
+    "preview": "firebase hosting:channel:deploy preview --expires 7d",
+    "deploy:staging": "firebase hosting:channel:deploy staging --expires 30d"
+  },
+  "keywords": [
+    "website",
+    "portfolio",
+    "digital-agency",
+    "roya",
+    "static-site"
+  ],
+  "author": "Roya Digital Agency",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^12.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/roya-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/roya-website/issues"
+  },
+  "homepage": "https://roya.marketing"
+}

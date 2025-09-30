@@ -1,0 +1,92 @@
+  [{
+    "id": "badael-branding",
+    "slug": "badael-branding-2025",
+    "title": "Badael Branding",
+    "category": "Branding",
+    "year": "2025",
+    "summary": "Brand identity design and art direction for an innovative startup in the tech sector.",
+    "overview": "Badael came to us as a startup with a revolutionary product but no clear brand identity.",
+    "overview2": "We worked closely with their team to define their brand personality and market positioning.",
+    "overview3": "The resulting brand identity reflects their innovative spirit while maintaining professionalism and trust. The brand launch was highly successful, helping them secure funding and establish a strong market presence.",
+    "deliverables": [
+      "Brand identity design",
+      "Art direction for marketing",
+      "Startup brand strategy",
+      "Digital presence guidelines"
+    ],
+    "banner": "/assets/imgs/roya-imgs/badael/Badael_banner_1.png",
+    "gallery": [
+      "/assets/imgs/roya-imgs/badael/img1_1.png",
+      "/assets/imgs/roya-imgs/badael/img1_2.png",
+      "/assets/imgs/roya-imgs/badael/Badael_banner_2.png"
+    ]
+  },
+  {
+    "id": "16-nulls",
+    "slug": "16-nulls-2024",
+    "title": "16 Nulls",
+    "category": "Web",
+    "year": "2024",
+    "summary": "Brand identity, social media management, and website design for a tech startup.",
+    "overview": "16 Nulls is a tech startup that needed a complete digital presence to launch their innovative product.",
+    "overview2": "We provided end-to-end services including brand identity design, social media strategy, and website development.", 
+    "overview3": "The project helped them successfully launch their product and attract early adopters.",
+    "deliverables": [
+      "Startup brand identity",
+      "Social media launch strategy",
+      "Product website design",
+      "Launch campaign materials"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner_volla_work.png",
+    "gallery": [
+      "/assets/imgs/roya-imgs/16-nulls/16-nulls-1.jpg",
+      "/assets/imgs/roya-imgs/16-nulls/16-nulls-2.jpg",
+      "/assets/imgs/roya-imgs/16-nulls/16-nulls-3.jpg"
+    ]
+  },
+  {
+    "id": "raheel",
+    "slug": "raheel-2025",
+    "title": "Raheel",
+    "category": "Web",
+    "year": "2025",
+    "summary": "Brand identity, social media management, and website design for a lifestyle brand.",
+    "overview": "Raheel needed a complete brand transformation to better connect with their target audience and improve their market position.", 
+    "overview2": "We developed a comprehensive strategy that included brand identity design, social media management, and website development.",
+    "overview3": "The project resulted in significant improvements in brand awareness and customer engagement.",
+    "deliverables": [
+      "Brand identity and visual system",
+      "Social media strategy and content",
+      "Website design and development",
+      "Digital marketing campaigns"
+    ],
+    "banner": "/assets/imgs/roya-imgs/panner rahel_works.png",
+    "gallery": [
+      "/assets/imgs/roya-imgs/raheel/raheel-1.jpg",
+      "/assets/imgs/roya-imgs/raheel/raheel-2.jpg",
+      "/assets/imgs/roya-imgs/raheel/raheel-3.jpg"
+    ]
+  },
+  {
+    "id": "voola",
+    "slug": "voola-2024",
+    "title": "Voola",
+    "category": "Web",
+    "year": "2024",
+    "summary": "Brand identity, social media management, and website design for a creative agency.",
+    "overview": "Voola is a creative agency that needed to refresh their brand and improve their digital presence to attract new clients.", 
+    "overview2": "We provided comprehensive services including brand identity design, social media strategy, and website development.",
+    "overview3": "The project helped them establish a stronger market presence and win new business.",
+    "deliverables": [
+      "Agency brand refresh",
+      "Social media strategy",
+      "Portfolio website design",
+      "Client acquisition materials"
+    ],
+    "banner": "/assets/imgs/roya-imgs/panner202_work.png",
+    "gallery": [
+      "/assets/imgs/roya-imgs/voola/voola-1.jpg",
+      "/assets/imgs/roya-imgs/voola/voola-2.jpg",
+      "/assets/imgs/roya-imgs/voola/voola-3.jpg"
+    ]
+  }]

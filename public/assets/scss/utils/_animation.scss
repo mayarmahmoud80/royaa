@@ -1,13 +1,13 @@
 /*----------------------------------------*/
-/*  01. ANIMATION CSS START
+/* animation css */
 /*----------------------------------------*/
 
-.cf_parallax_image {
+.t_parallax_image {
   overflow: hidden;
 }
 
 // Bubble
-@keyframes wcBubble {
+@keyframes t-Bubble {
   0% {
     scale: 1;
   }
@@ -23,7 +23,7 @@
 
 
 // Zoom
-@keyframes wcZoom {
+@keyframes t-Zoom {
   0% {
     scale: 1;
   }
@@ -38,7 +38,7 @@
 }
 
 // Zoom 2
-@keyframes wcZoom_2 {
+@keyframes t-Zoom_2 {
   0% {
     scale: 1;
   }
@@ -54,7 +54,7 @@
 
 
 // Slide 
-@keyframes wcSlideBottom {
+@keyframes t-SlideBottom {
   0% {
     transform: translateY(0);
   }
@@ -68,9 +68,8 @@
   }
 }
 
-
 // 
-@keyframes reveal {
+@keyframes t-reveal {
   to {
     opacity: 1;
     filter: blur(0px);
@@ -78,7 +77,7 @@
 }
 
 // Fade Up
-@keyframes wcfadeUp {
+@keyframes t-fadeUp {
   0% {
     opacity: 0;
     -webkit-transform: translateY(50px);
@@ -94,15 +93,13 @@
   }
 }
 
-
-
-@keyframes spinner {
+@keyframes t-spinner {
   to {
     transform: rotateZ(360deg);
   }
 }
 
-@keyframes characters {
+@keyframes t-characters {
 
   0%,
   75%,
@@ -118,9 +115,31 @@
   }
 }
 
-@keyframes sheen {
+@keyframes t-sheen {
   50% {
     transform: translateY(-20px);
     color: var(--primary);
+  }
+}
+
+@keyframes t-slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-130px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

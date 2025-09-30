@@ -1,0 +1,142 @@
+[
+  {
+    "id": "brand-identity",
+    "slug": "brand-identity-positioning",
+    "title": "Brand Identity & Positioning",
+    "short": "We shape brands that reflect your vision and captivate at first glance.",
+    "long": "We shape brands that reflect your vision and captivate at first glance. Our team crafts cohesive identities—from logos to color palettes and messaging—that express your essence and reinforce your positioning. We create comprehensive brand systems that work across all touchpoints, ensuring consistency and impact wherever your brand appears.",
+    "features": [
+      "Brand discovery workshops and strategy development",
+      "Logo design and visual identity systems", 
+      "Brand guidelines, tone of voice and storytelling",
+      "Strategic positioning and market analysis"
+    ],
+    "banner": "assets/imgs/roya-imgs/branding-plutus.jpg"
+  },
+  {
+    "id": "content-creation",
+    "slug": "content-creation",
+    "title": "Content Creation",
+    "short": "Content is at the heart of your brand's voice.",
+    "long": "Content is at the heart of your brand's voice. We create engaging, targeted content built on a deep understanding of your audience and the platform. Our content team specializes in crafting compelling narratives that resonate with your target market and drive meaningful engagement across all channels.",
+    "features": [
+      "Long‑form and short‑form copywriting",
+      "Visual storytelling through photography and videography",
+      "Motion graphics and animation",
+      "Strategic content planning and calendar development"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-content.jpeg"
+  },
+  {
+    "id": "social-media",
+    "slug": "social-media-management",
+    "title": "Social Media Management",
+    "short": "We turn followers into audiences—and audiences into loyal customers.",
+    "long": "We turn followers into audiences—and audiences into loyal customers. Our social media team handles everything from content creation to community management. We develop strategies that build genuine connections with your audience, increase engagement, and drive conversions across all major platforms.",
+    "features": [
+      "Platform selection and audience segmentation",
+      "Calendar planning, scheduling and posting",
+      "Community engagement and customer support",
+      "Data‑driven optimization and growth strategies"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-social.png"
+  },
+  {
+    "id": "advertising",
+    "slug": "advertising-campaign-management",
+    "title": "Advertising Campaign Management",
+    "short": "From concept to conversion, we manage your advertising campaigns professionally.",
+    "long": "From concept to conversion, we manage your advertising campaigns professionally. Our advertising experts develop and execute campaigns that reach the right audience at the right time, maximizing your ROI and driving measurable results across all digital and traditional channels.",
+    "features": [
+      "Cross‑channel campaign planning and distribution",
+      "Creative concept development, visuals and copywriting",
+      "Performance tracking and strategy refinement",
+      "Conversion optimization for maximum ROI"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-advertising.png"
+  },
+  {
+    "id": "creative-campaigns",
+    "slug": "creative-campaigns",
+    "title": "Creative Campaigns",
+    "short": "We launch ideas that reach, convince and remain.",
+    "long": "We launch ideas that reach, convince and remain. Our creative campaigns blend analysis with bold imagination to make your brand unforgettable. We develop innovative concepts that cut through the noise and create lasting impressions that drive brand awareness and customer loyalty.",
+    "features": [
+      "Out‑of‑the‑box marketing concepts tailored to your brand's spirit",
+      "Multi‑channel execution with impactful visuals and messaging",
+      "Audience activation and engagement strategies",
+      "Measurable outcomes to assess success"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-creative.png"
+  },
+  {
+    "id": "media-production",
+    "slug": "media-production",
+    "title": "Media Production",
+    "short": "High‑quality visuals bring your message to life.",
+    "long": "High‑quality visuals bring your message to life. Our media production services include professional videography, photography and motion design. We create compelling visual content that tells your story and engages your audience across all platforms and touchpoints.",
+    "features": [
+      "Concept development and storyboarding",
+      "Studio and on‑location filming and photography",
+      "Post‑production editing, color grading and sound design",
+      "Creative direction and art direction for shoots"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-media.jpg"
+  },
+  {
+    "id": "print-outdoor",
+    "slug": "print-outdoor-advertising",
+    "title": "Print & Outdoor Advertising",
+    "short": "We design your presence to attract attention and plant your brand firmly in people's minds.",
+    "long": "We design your presence to attract attention and plant your brand firmly in people's minds. From billboards to banners, we ensure your brand looks its best in the physical world. Our print and outdoor designs are crafted to make maximum impact and reinforce your brand message wherever your audience encounters them.",
+    "features": [
+      "Concept development and format selection",
+      "Creative design that aligns with your identity",
+      "High‑quality production management and installation",
+      "Collateral design: brochures, roll‑ups, stands, packaging, etc."
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-print.png"
+  },
+  {
+    "id": "seo",
+    "slug": "search-engine-optimization",
+    "title": "Search Engine Optimization (SEO)",
+    "short": "We help you rank at the top of search results through integrated SEO strategies.",
+    "long": "We help you rank at the top of search results through integrated SEO strategies. Our SEO experts work to improve your website's visibility and organic traffic through technical optimization, content strategy, and link building. We focus on sustainable, long-term growth that drives qualified traffic to your business.",
+    "features": [
+      "Keyword analysis and content optimization",
+      "Technical improvements for speed, security and mobile‑friendliness",
+      "On‑page and off‑page SEO tactics",
+      "Ongoing monitoring and performance reporting"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-seo.jpg"
+  },
+  {
+    "id": "measurement",
+    "slug": "measurement-analysis",
+    "title": "Measurement & Analysis",
+    "short": "We transform data into strategy.",
+    "long": "We transform data into strategy. Our analysts track performance, analyze campaigns and provide insights to refine your marketing efforts. We believe that data-driven decisions lead to better results, and we provide the analytics and reporting you need to understand your performance and optimize for success.",
+    "features": [
+      "KPI definition and dashboard setup",
+      "Consumer behavior analysis",
+      "Campaign performance reporting",
+      "Data‑driven recommendations for continuous improvement"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-analytics.jpg"
+  },
+  {
+    "id": "web-development",
+    "slug": "website-design-development",
+    "title": "Website Design & Development",
+    "short": "We build user‑friendly, responsive websites that showcase your brand and support your business goals.",
+    "long": "We build user‑friendly, responsive websites that showcase your brand and support your business goals. Our development team creates custom solutions that are fast, secure, and optimized for conversions. From simple landing pages to complex e-commerce platforms, we deliver websites that work perfectly across all devices and browsers.",
+    "features": [
+      "Custom UI/UX design and prototyping",
+      "Front‑end and back‑end development (WordPress, React, Node.js, Flutter and more)",
+      "E‑commerce solutions and interactive platforms",
+      "Ongoing maintenance, performance optimization and security audits"
+    ],
+    "banner": "/assets/imgs/roya-imgs/banner-web.jpg"
+  }
+]

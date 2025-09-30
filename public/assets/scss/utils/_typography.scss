@@ -1,5 +1,5 @@
 /*----------------------------------------*/
-/*  01. TYPOGRAPHY CSS START
+/* typography css  */
 /*----------------------------------------*/
 
 
@@ -7,24 +7,172 @@
 // Font Family
 // ---------------------------
 
-// kanit 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* dm sans  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* instrument sans  */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 
+/* Thunder  */
+@font-face {
+  font-family: "Thunder";
+  src: url('../fonts/Thunder-BoldLC.ttf');
+  font-weight: 700;
+}
 
+@font-face {
+  font-family: "Thunder";
+  src: url('../fonts/Thunder-SemiBoldLC.ttf');
+  font-weight: 600;
+}
 
-:root {
-  --font_kanit: "Kanit", sans-serif;
-  --font_awesome: 'Font Awesome 6 Free';
+@font-face {
+  font-family: "Thunder";
+  src: url('../fonts/Thunder-LC.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Thunder";
+  src: url('../fonts/Thunder-MediumLC.ttf');
+  font-weight: 500;
+}
+
+/* Sequel Sans  */
+@font-face {
+  font-family: "Sequel Sans Roman Body";
+  src: url('../fonts/Sequel Sans Roman Body.otf');
+  font-weight: 310;
+}
+
+@font-face {
+  font-family: "Sequel Sans Medium Body";
+  src: url('../fonts/Sequel Sans Medium Body.otf');
+  font-weight: 315;
+}
+
+/* times now  */
+@font-face {
+  font-family: "TimesNow-SemiLightItalic";
+  src: url('../fonts/TimesNow-SemiLightItalic.ttf');
+  font-weight: 400;
+}
+
+/* bdo grotesk  */
+@font-face {
+  font-family: "BDOGrotesk-Regular";
+  src: url('../fonts/BDOGrotesk-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BDOGrotesk-Regular";
+  src: url('../fonts/BDOGrotesk-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "BDOGrotesk-Regular";
+  src: url('../fonts/BDOGrotesk-DemiBold.ttf');
+  font-weight: 600;
+}
+
+/* tartufffo trial */
+@font-face {
+  font-family: "Tartuffo_Trial";
+  src: url('../fonts/Tartuffo_Trial-Thin.otf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Tartuffo_Trial";
+  src: url('../fonts/Tartuffo_Trial-LightItalic.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Tartuffo_Trial";
+  src: url('../fonts/Tartuffo_Trial-Light.otf');
+  font-weight: 300;
 }
 
 
+@font-face {
+  font-family: "tartuffo-font-family-family";
+  src: url('../fonts/Tartuffo_Trial-MediumItalic.otf');
+  font-weight: 500;
+}
 
+@font-face {
+  font-family: "recoleta";
+  src: url('../fonts/recoleta/Latinotype\ -\ Recoleta\ Regular.otf');
+  font-weight: 300;
+}
 
+@font-face {
+  font-family: "recoleta";
+  src: url('../fonts/recoleta/Latinotype\ -\ Recoleta\ Medium.otf');
+  font-weight: 500;
+}
 
+@font-face {
+  font-family: "recoleta";
+  src: url('../fonts/recoleta/Latinotype\ -\ Recoleta\ Bold.otf');
+  font-weight: 700;
+}
 
+@font-face {
+  font-family: "recoleta";
+  src: url('../fonts/recoleta/Latinotype\ -\ Recoleta\ Light.otf');
+  font-weight: 300;
+}
 
+@font-face {
+  font-family: "recoleta";
+  src: url('../fonts/recoleta/Latinotype\ -\ Recoleta\ Black.otf');
+  font-weight: 900;
+}
 
+:root {
+  --font_dmsans: "DM Sans", sans-serif;
+  --font_instrumentsans: "Instrument Sans", sans-serif;
+  --font_thunder: "Thunder";
+  --font_sequelsansromanbody: "Sequel Sans Roman Body";
+  --font_sequelsansmediumbody: "Sequel Sans Medium Body";
+  --font_timesnow: "TimesNow-SemiLightItalic";
+  --font_bdogrotesk: "BDOGrotesk-Regular";
+  --font_tartuffo: "tartuffo-font-family";
+  --font_tartuffotrial: "Tartuffo_Trial";
+  --font_awesome: 'Font Awesome 6 Free';
+  --font_recoleta: "recoleta";
+}
+
+// Font Family Classes
+.font {
+  &-heading {
+    &-instrumentsans-medium {
+      @include heading (var(--font_instrumentsans));
+    }
+
+    &-sequelsans-romanbody {
+      @include heading (var(--font_sequelsansromanbody));
+    }
+
+    &-thunder-regular {
+      @include heading (var(--font_thunder));
+    }
+
+    &-bdogrotesk-regular {
+      @include heading (var(--font_bdogrotesk));
+    }
+
+    &-tartuffotrial-thin {
+      @include heading (var(--font_tartuffotrial));
+    }
+
+  }
+}
 
 // Defalut Style
 * {
@@ -33,11 +181,9 @@
 }
 
 body {
-  font-family: var(--font_kanit);
+  font-family: var(--font_dmsans);
   line-height: 1;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -52,6 +198,9 @@ h6 {
   padding: 0;
   margin: 0;
   color: var(--primary);
+  line-height: 1.22;
+  font-family: var(--font_recoleta);
+  font-weight: 500;
 }
 
 ul,
@@ -83,11 +232,15 @@ button {
 p {
   padding: 0;
   margin: 0;
-  line-height: 1.41;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 30px;
   color: var(--secondary);
 
+  @media #{$xl} {
+    font-size: 20px;
+    line-height: 28px;
+  }
 
 }
 
@@ -114,7 +267,6 @@ img {
   font-weight: 700;
 }
 
-
 // No Gutter
 @media #{$sm} {
   .g-0 {
@@ -135,6 +287,7 @@ img {
 main {
   display: inline-block;
   width: 100%;
+  overflow: hidden;
 }
 
 h1 {

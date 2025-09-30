@@ -1,5 +1,5 @@
 /*----------------------------------------*/
-/*  01. THEME CSS START
+/* theme css  */
 /*----------------------------------------*/
 
 // for image transparency 
@@ -28,21 +28,15 @@ html {
   }
 }
 
-
 body {
-  background-color: #F5F5F5;
+  background-color: #F8F8F8;
   color: var(--secondary);
-
-  @include dark {
-    background-color: #121212;
-  }
 }
 
 .body-wrapper {
   background-color: var(--white);
-  overflow: hidden;
 
-  @include dark {
+  &.dark {
     background-color: var(--black);
   }
 }
@@ -65,7 +59,6 @@ body {
   overflow: hidden;
 }
 
-
 .color {
   &-white {
     color: var(--white);
@@ -82,14 +75,10 @@ body {
   &-secondary {
     color: var(--secondary);
   }
-
-
-
 }
 
-
 // BG Color
-.wc-bg {
+.bg {
 
   &-white {
     background-color: var(--white);
@@ -109,6 +98,10 @@ body {
 
   &-transparent {
     background-color: transparent !important;
+  }
+
+  &-theme {
+    background-color: var(--theme) !important;
   }
 }
 
@@ -130,24 +123,17 @@ body {
   }
 }
 
-
-// Box Layout
-.box-layout {
-  max-width: 1600px;
-  margin: 0 auto;
-  overflow: hidden !important;
-}
-
-
 // Text Border
 .text-underline {
   text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  text-decoration-skip-ink: none;
 }
 
-
-
+.header__area-6 {
+  position: unset;
+}
 
 .vertically-center {
   height: 100%;
@@ -167,8 +153,6 @@ body {
   }
 }
 
-
-
 header {
   margin-bottom: -1px;
   z-index: 100;
@@ -178,29 +162,32 @@ section {
   margin-bottom: -1px;
 }
 
+.mb--1 {
+  margin-bottom: -5px;
+}
+
 .dir-rtl {
   direction: rtl;
 }
 
+.show-dark {
+  display: inline-block;
+}
 
+.show-light {
+  display: none;
+}
 
 .line-divider-sm {
   height: 0.5px;
   background-color: var(--black-9);
-
-  @include dark {
-    background-color: #E9E9E9;
-  }
 }
-
 
 // wordpress reset style 
 .admin-bar header,
 .admin-bar .body-wrapper {
   margin-top: 32px;
 }
-
-
 
 // swiper rtl support 
 .swiper,

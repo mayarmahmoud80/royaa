@@ -1,0 +1,362 @@
+{
+  "header": {
+    "logoAlt": "Roya",
+    "nav": {
+      "home": "Home",
+      "services": "Services", 
+      "projects": "Projects",
+      "about": "About Us",
+      "blog": "Blog",
+      "contact": "Contact Us"
+    },
+    "langButton": {
+      "en": "En",
+      "ar": "Ar"
+    },
+    "ctaButton": "Let's Talk"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Award winning marketing agency — 2024®",
+      "title": "Every step is carefully planned, and every idea we execute makes a difference. We don't sell ideas—we bring them to life.",
+      "description": "As a full‑service 360° marketing agency, we go beyond traditional campaigns. We craft smart strategies that turn your brand's vision into a tangible reality. By blending creativity and innovation, we produce powerful stories that leave a lasting impression.",
+      "ctaPrimary": "Get started",
+      "ctaSecondary": "Learn more"
+    },
+    "sections": {
+      "aboutTeaser": {
+        "title": "What We Do",
+        "text": "We don't just convey messages; we create experiences that convert and build long‑term loyalty. Bold ideas become impactful achievements; brands are reshaped to shine in a fast‑paced market. Smart planning and a data‑driven approach ensure your message reaches the right audience at the right time."
+      },
+      "servicesTeaser": {
+        "title": "Leading core industry",
+        "items": [
+          "Social Media Management – building communities, growing engagement and turning followers into customers.",
+          "Website Design & Development – crafting professional, user‑friendly websites that serve as your digital storefront.",
+          "Visual Identity & Branding – designing logos and cohesive identities that stand out in a crowded market.",
+          "Creative Campaigns – delivering bold, multi‑channel campaigns that capture attention and inspire action.",
+          "Measurement & Analysis – tracking performance to refine strategies and ensure sustainable growth."
+        ]
+      },
+      "projectsTeaser": {
+        "title": "We find the unique, easy solution for each creative project",
+        "caption": "Featured Projects Preview"
+      },
+      "clients": {
+        "title": "Help to brands growing up and show their success stories to the world",
+        "subtitle": "We have helped more than 200 clients achieve success, combining analytics and creativity to deliver measurable results."
+      },
+      "stats": {
+        "projects": "200+",
+        "clients": "200+",
+        "awards": "15+"
+      },
+      "testimonials": [
+        {
+          "name": "Sarah Johnson",
+          "role": "CEO, TechStart",
+          "quote": "Roya transformed our brand identity and helped us reach new heights in the market. Their strategic approach and creative execution exceeded our expectations."
+        },
+        {
+          "name": "Ahmed Al-Rashid", 
+          "role": "Founder, Digital Solutions",
+          "quote": "Working with Roya was a game-changer. Their team understood our vision and delivered results that speak for themselves."
+        }
+      ]
+    }
+  },
+  "services": {
+    "pageTitle": "Services",
+    "intro": "We think out of the box when it comes to creative",
+    "subtitle": "Capabilities",
+    "cards": [
+      {
+        "id": "brand-identity",
+        "title": "Brand Identity & Positioning",
+        "excerpt": "We shape brands that reflect your vision and captivate at first glance. Our team crafts cohesive identities—from logos to color palettes and messaging—that express your essence and reinforce your positioning.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "content-creation",
+        "title": "Content Creation", 
+        "excerpt": "Content is at the heart of your brand's voice. We create engaging, targeted content built on a deep understanding of your audience and the platform.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "social-media",
+        "title": "Social Media Management",
+        "excerpt": "We turn followers into audiences—and audiences into loyal customers. Our social media team handles everything from content creation to community management.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "advertising",
+        "title": "Advertising Campaign Management",
+        "excerpt": "From concept to conversion, we manage your advertising campaigns professionally.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "creative-campaigns",
+        "title": "Creative Campaigns",
+        "excerpt": "We launch ideas that reach, convince and remain. Our creative campaigns blend analysis with bold imagination to make your brand unforgettable.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "media-production",
+        "title": "Media Production",
+        "excerpt": "High‑quality visuals bring your message to life. Our media production services include professional videography, photography and motion design.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "print-outdoor",
+        "title": "Print & Outdoor Advertising",
+        "excerpt": "We design your presence to attract attention and plant your brand firmly in people's minds. From billboards to banners, we ensure your brand looks its best in the physical world.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "seo",
+        "title": "Search Engine Optimization (SEO)",
+        "excerpt": "We help you rank at the top of search results through integrated SEO strategies.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "measurement",
+        "title": "Measurement & Analysis",
+        "excerpt": "We transform data into strategy. Our analysts track performance, analyze campaigns and provide insights to refine your marketing efforts.",
+        "learnMore": "Learn more"
+      },
+      {
+        "id": "web-development",
+        "title": "Website Design & Development",
+        "excerpt": "We build user‑friendly, responsive websites that showcase your brand and support your business goals.",
+        "learnMore": "Learn more"
+      }
+    ]
+  },
+  "serviceDetails": {
+    "breadcrumbs": {
+      "home": "Home",
+      "services": "Services"
+    },
+    "meta": {
+      "title": "Service Details - Roya Marketing",
+      "description": "Learn more about our comprehensive marketing services"
+    },
+    "cta": {
+      "primary": "Get Started",
+      "secondary": "Contact Us"
+    }
+  },
+  "projects": {
+    "pageTitle": "Projects",
+    "filters": ["All", "Branding", "Web", "Ads"],
+    "gridCaption": "Our portfolio showcases how we transform ideas into memorable brand experiences across diverse industries.",
+    "cards": [
+      {
+        "id": "zalila-branding",
+        "title": "Zalila Branding",
+        "category": "Branding",
+        "year": "2024",
+        "excerpt": "Complete brand identity design"
+      },
+      {
+        "id": "nughayer-branding", 
+        "title": "Nughayer Branding",
+        "category": "Branding",
+        "year": "2025",
+        "excerpt": "Art direction and identity design"
+      },
+      {
+        "id": "sadaf-branding",
+        "title": "Sadaf Branding", 
+        "category": "Branding",
+        "year": "2025",
+        "excerpt": "Holistic identity experience that embodies values and vision"
+      },
+      {
+        "id": "alhijaz-power",
+        "title": "Alhijaz Power Branding",
+        "category": "Branding", 
+        "year": "2025",
+        "excerpt": "Comprehensive rebrand connecting essence and aesthetics"
+      },
+      {
+        "id": "badael-branding",
+        "title": "Badael Branding",
+        "category": "Branding",
+        "year": "2025", 
+        "excerpt": "Brand identity design and art direction"
+      },
+      {
+        "id": "atqen-branding",
+        "title": "Atqen Branding",
+        "category": "Branding",
+        "year": "2025",
+        "excerpt": "Brand identity design and art direction"
+      },
+      {
+        "id": "woven",
+        "title": "Woven",
+        "category": "Web",
+        "year": "2024",
+        "excerpt": "Brand identity, social media management, website design"
+      },
+      {
+        "id": "youstove",
+        "title": "YouStove",
+        "category": "Web",
+        "year": "2024",
+        "excerpt": "Brand identity, social media management, website design"
+      },
+      {
+        "id": "16-nulls",
+        "title": "16 Nulls",
+        "category": "Web",
+        "year": "2024",
+        "excerpt": "Brand identity, social media management, website design"
+      },
+      {
+        "id": "raheel",
+        "title": "Raheel",
+        "category": "Web",
+        "year": "2025",
+        "excerpt": "Brand identity, social media management, website design"
+      },
+      {
+        "id": "voola",
+        "title": "Voola",
+        "category": "Web",
+        "year": "2024",
+        "excerpt": "Brand identity, social media management, website design"
+      }
+    ]
+  },
+  "projectDetails": {
+    "breadcrumbs": {
+      "home": "Home",
+      "projects": "Projects"
+    },
+    "meta": {
+      "title": "Project Details - Roya Marketing",
+      "description": "Explore our project case studies and success stories"
+    },
+    "overviewTitle": "Project Overview",
+    "overview": "Each case study presents the client's challenge, our solution and the measurable impact.",
+    "deliverablesTitle": "Deliverables",
+    "deliverables": [
+      "Created a comprehensive brand identity, including logo design, color palette and typography",
+      "Developed brand guidelines to ensure consistent use across all touchpoints",
+      "Crafted a social media strategy and managed content calendars to grow audience engagement and brand loyalty",
+      "Designed and developed a responsive website that reflects the brand's personality and provides a seamless user experience"
+    ],
+    "nextPrev": {
+      "prev": "Previous Project",
+      "next": "Next Project"
+    }
+  },
+  "about": {
+    "pageTitle": "About Us",
+    "subtitle": "Since 2012",
+    "mission": {
+      "title": "Who We Are",
+      "text": "We are Roya, a strategic marketing agency with a creative soul. Our mission is to turn your vision into a brand that inspires and succeeds at every touchpoint. As a full‑service, 360° agency, we transform ideas into brands that leave a memorable impact. We create content that sticks in people's minds and brings your brand closer to your audience."
+    },
+    "vision": {
+      "title": "Our Philosophy",
+      "text": "We believe in strategy first. Creativity alone is not enough; every great idea needs a strong strategy to guide it. We plan meticulously and execute intelligently to produce campaigns that make a difference and deliver measurable growth."
+    },
+    "approach": {
+      "title": "Our Approach",
+      "items": [
+        "Strategic Imagination – We combine deep analysis with bold creativity to craft integrated marketing solutions. From brand identity to content creation and campaign management, we accompany you at every step to reach your audience and achieve tangible results.",
+        "Smart Planning & Efficient Execution – We design data‑driven strategies, maximize budgets, and invest resources with precision to deliver sustainable success.",
+        "Showcasing Your Best – We ensure your brand appears at its best—both online and offline—so that you are seen the way you deserve."
+      ]
+    },
+    "team": {
+      "title": "Meet the talented squad, behind the creativity",
+      "membersCaption": "A collective bunch working on incredible projects and building enduring partnerships that extend well beyond the deliverable."
+    },
+    "stats": {
+      "clients": "200+",
+      "projects": "200+", 
+      "satisfaction": "95%",
+      "years": "12+"
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "subtitle": "We've been waiting to start a success story together",
+    "description": "Contact us now and let us help your business grow.",
+    "address": "4422 Imam Saud bin Faisal Street, 6386, Al‑Malqa District, Riyadh, Saudi Arabia",
+    "email": "info@roya.marketing",
+    "phone": "+966 566 444 100",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email", 
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "listIntro": "Learn our recent journal",
+    "posts": [
+      {
+        "title": "Beyond the basics, how to take marketing to the next level",
+        "excerpt": "Discover advanced marketing strategies that can transform your brand's digital presence and drive meaningful engagement.",
+        "author": "Roya Team",
+        "date": "2024",
+        "category": "Marketing"
+      },
+      {
+        "title": "The future of brand identity in the digital age",
+        "excerpt": "Exploring how modern brands are adapting their visual identity to stand out in an increasingly digital marketplace.",
+        "author": "Roya Team", 
+        "date": "2024",
+        "category": "Branding"
+      },
+      {
+        "title": "Creative campaigns that made a difference",
+        "excerpt": "A look at some of the most impactful marketing campaigns and what made them successful.",
+        "author": "Roya Team",
+        "date": "2024", 
+        "category": "Creative"
+      },
+      {
+        "title": "Data-driven marketing: turning insights into action",
+        "excerpt": "How to leverage analytics and data to create more effective marketing strategies and campaigns.",
+        "author": "Roya Team",
+        "date": "2024",
+        "category": "Analytics"
+      }
+    ]
+  },
+  "blogDetails": {
+    "breadcrumbs": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "meta": {
+      "title": "Blog Details - Roya Marketing",
+      "description": "Read our latest insights and marketing expertise"
+    },
+    "authorBy": "By",
+    "share": "Share",
+    "relatedTitle": "Related Articles"
+  },
+  "footer": {
+    "about": "Roya is a strategic marketing agency with a creative soul. We transform ideas into brands that leave a memorable impact.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© Roya 2025. All rights reserved.",
+    "newsletter": {
+      "title": "Stay Updated",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    }
+  }
+}
