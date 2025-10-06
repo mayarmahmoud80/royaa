@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cards Logo Scroll</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* ===== Base card style ===== */
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      cursor: pointer;
+      background: #fff;
+      transition: transform .3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    .bg-img {
+      width: 100%;
+      height: 14rem;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Overlay */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      pointer-events: none;
+      background: rgba(0,0,0,0);
+      transition: background .3s ease;
+    }
+    .card:hover .overlay {
+      background: rgba(0,0,0,0.25);
+    }
+
+    /* Marquee Container */
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* Track inside marquee */
+    .marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      width: 200%; /* double width for continuous loop */
+      transform: translateX(0);
+    }
+
+    /* Logo style */
+    .logo {
+      width: 80px;
+      height: 80px;
+      flex: 0 0 auto;
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+
+    .card:hover .logo {
+      opacity: 1;
+    }
+
+    /* Scroll animation */
+    .card:hover .marquee-track {
+      animation: scroll-left 6s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 py-16">
+
+  <!-- Section -->
+  <section class="max-w-5xl mx-auto px-6 grid gap-8 sm:grid-cols-2">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <img class="bg-img" src="https://picsum.photos/seed/brand1/800/600" alt="background">
+      <div class="overlay">
+        <div class="marquee">
+          <div class="marquee-track">
+            <!-- Repeat same logo twice -->
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_%22G%22_Logo.svg" alt="logo">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_%22G%22_Logo.svg" alt="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img class="bg-img" src="https://picsum.photos/seed/brand2/800/600" alt="background">
+      <div class="overlay">
+        <div class="marquee">
+          <div class="marquee-track">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="logo">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
