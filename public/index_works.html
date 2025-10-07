@@ -3,67 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>فريق العمل</title>
+  <title>فريق العمل - كروت دائرية</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(135deg, #f6f8fb 0%, #e9edf3 100%);
+      background: #000;
       font-family: 'Tajawal', sans-serif;
-      overflow-x: hidden;
-    }
-
-    .team-section {
-      max-width: 900px;
-      margin: auto;
-      padding: 3rem 1rem;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #222;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
-    .section-title::after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 60px;
-      height: 3px;
-      background: #3b82f6;
-      border-radius: 3px;
     }
 
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 1.4rem;
-      justify-items: center;
+      gap: 1rem;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
     }
 
     .team-card {
       position: relative;
       text-align: center;
       cursor: pointer;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-      animation: fadeUp 0.8s ease forwards;
-      opacity: 0;
-    }
-
-    @keyframes fadeUp {
-      from {
-        transform: translateY(30px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .team-card img {
@@ -72,81 +33,42 @@
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-      transition: all 0.4s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
       margin: auto;
     }
 
     .team-card:hover img {
-      transform: scale(1.08) rotate(1deg);
+      transform: scale(1.08);
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
     .info-box {
       margin-top: 0.6rem;
-      transition: all 0.4s ease;
     }
 
     .info-box h3 {
       font-size: 0.85rem;
       font-weight: 600;
-      color: #1f2937;
+      color: #ffffff2a;
       margin: 0;
-      transition: color 0.3s ease;
     }
 
     .info-box p {
       font-size: 0.7rem;
-      color: #6b7280;
+      color: #ffffff6c;
       margin: 0;
-      transition: color 0.3s ease;
-    }
-
-    .team-card:hover .info-box {
-      transform: translateY(-4px);
-    }
-
-    .team-card:hover .info-box h3 {
-      color: #3b82f6;
-    }
-
-    .team-card:hover .info-box p {
-      color: #374151;
-    }
-
-    /* ✅ موبايل: أصغر وأكثف */
-    @media (max-width: 640px) {
-      .team-grid {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        gap: 0.8rem;
-      }
-
-      .team-card img {
-        width: 70px;
-        height: 70px;
-      }
-
-      .info-box h3 {
-        font-size: 0.7rem;
-      }
-
-      .info-box p {
-        font-size: 0.55rem;
-      }
-
-      .section-title {
-        font-size: 1.1rem;
-      }
     }
   </style>
 </head>
 <body>
 
-  <section class="team-section">
-    <h2 class="section-title">فريق العمل</h2>
+  <section>
+    <h2 class="text-center text-lg font-bold mt-6 mb-4 text-gray-800">فريق العمل</h2>
 
     <div class="team-grid">
-      <div class="team-card" style="animation-delay: 0.1s;">
+
+      <div class="team-card">
         <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="">
         <div class="info-box">
           <h3>الاسم هنا</h3>
@@ -154,7 +76,7 @@
         </div>
       </div>
 
-      <div class="team-card" style="animation-delay: 0.2s;">
+      <div class="team-card">
         <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="">
         <div class="info-box">
           <h3>الاسم هنا</h3>
@@ -162,7 +84,7 @@
         </div>
       </div>
 
-      <div class="team-card" style="animation-delay: 0.3s;">
+      <div class="team-card">
         <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
         <div class="info-box">
           <h3>الاسم هنا</h3>
@@ -170,21 +92,55 @@
         </div>
       </div>
 
-      <div class="team-card" style="animation-delay: 0.4s;">
-        <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
         <div class="info-box">
           <h3>الاسم هنا</h3>
           <p>الوظيفة هنا</p>
         </div>
       </div>
 
-      <div class="team-card" style="animation-delay: 0.5s;">
-        <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
         <div class="info-box">
           <h3>الاسم هنا</h3>
           <p>الوظيفة هنا</p>
         </div>
       </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+        <div class="info-box">
+          <h3>الاسم هنا</h3>
+          <p>الوظيفة هنا</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+        <div class="info-box">
+          <h3>الاسم هنا</h3>
+          <p>الوظيفة هنا</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+        <div class="info-box">
+          <h3>الاسم هنا</h3>
+          <p>الوظيفة هنا</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+        <div class="info-box">
+          <h3>الاسم هنا</h3>
+          <p>الوظيفة هنا</p>
+        </div>
+      </div>
+
+
     </div>
   </section>
 
