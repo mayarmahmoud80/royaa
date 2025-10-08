@@ -333,10 +333,17 @@
     </div>
   </section>
 
-<!-- //////////////////////////////////////////////////// -->
+  <section class="service-area my-5">
+  <div class="container">
+    <div id="brand-row" class="row justify-content-center gx-4 gy-4">
+      <!-- الكروت هتتحط هنا بالجافاسكريبت -->
+    </div>
+  </div>
+</section>
+
 
         <!-- service area start  -->
-        <section class="service-area">
+        <!--<section class="service-area">
           <div class="container large">
             <div class="service-area-inner section-spacing">
               <div class="section-header">
@@ -349,7 +356,6 @@
               </div>
               <div class="services-wrapper-box">
                 <div class="services-wrapper-1 d-flex flex-wrap">
-                <!------------------------------------------------>
                 <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 60vh;">
                   <div class="thumb">
                     <video id="bgVideo" autoplay muted loop playsinline >
@@ -365,17 +371,12 @@
                             </ul>
                         </div>
                 </div>
-                 <!------------------------------------------------>
-                 <!------------------------------------------------>
                  <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 60vh;">
   <div class="thumb">
     <video id="bgVideo" autoplay muted loop playsinline >
               <source src="https://res.cloudinary.com/doizn3h1h/video/upload/v1759712548/12920659-hd_1920_1080_30fps_xg9jpi.mp4" type="video/mp4">
             </video>
-    <!-- Top Right Branding Label -->
     <div class="branding-label">UI-UX Design</div>
-
-    <!-- Bottom Left Service List -->
     <ul class="service-list">
       <li><a href="service-details.html">Creative Direction</a></li>
       <li><a href="service-details.html">Brand Identity</a></li>
@@ -385,17 +386,13 @@
     </ul>
   </div>
 </div>
-                 <!------------------------------------------------>
-                                  <!------------------------------------------------>
                  <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 60vh;">
   <div class="thumb">
     <video id="bgVideo" autoplay muted loop playsinline >
               <source src="https://res.cloudinary.com/doizn3h1h/video/upload/v1759712578/8303104-hd_1920_1080_24fps_y87nso.mp4" type="video/mp4">
             </video>
-    <!-- Top Right Branding Label -->
     <div class="branding-label">Development</div>
 
-    <!-- Bottom Left Service List -->
     <ul class="service-list">
                        <li><a href="service-details.html">WordPress</a></li>
                         <li><a href="service-details.html">Webflow</a></li>
@@ -405,17 +402,13 @@
     </ul>
   </div>
 </div>
-                 <!------------------------------------------------>
-                                  <!------------------------------------------------>
                  <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 60vh;">
   <div class="thumb">
     <video id="bgVideo" autoplay muted loop playsinline >
               <source src="https://res.cloudinary.com/doizn3h1h/video/upload/v1759713619/VIDEO_1_WEBSITE22_gjmcv7.mp4" type="video/mp4">
             </video>
-    <!-- Top Right Branding Label -->
     <div class="branding-label">Digital Marketing</div>
 
-    <!-- Bottom Left Service List -->
     <ul class="service-list">
                         <li><a href="service-details.html">Online Marketing</a></li>
                         <li><a href="service-details.html">SEO-Marketing</a></li>
@@ -425,8 +418,7 @@
     </ul>
   </div>
 </div>
-                 <!------------------------------------------------>
-                  <!--<div class="service-box fade-anim ">
+                  <div class="service-box fade-anim ">
                   
                     <div class="content">
                       <h3 class="title"><a href="service-details.html">UI-UX Design</a></h3>
@@ -475,13 +467,29 @@
                     <div class="thumb">
                       <img class="grow" src="assets/imgs/gallery/image-6.webp" alt="image">
                     </div>
-                  </div>-->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>-->
+
+        <section class="service-area">
+          <div class="container large">
+            <div class="service-area-inner section-spacing">
+              <div class="section-header">
+                <div class="section-title-wrapper fade-anim">
+                  <div class="title-wrapper font-heading-recoleta-medium">
+                    <h2 class="section-title word-anim">Our Services</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="services-wrapper-box">
+                <div class="services-wrapper-1 d-flex flex-wrap" id="servicesContainer"></div>
+              </div>
+            </div>
+          </div>
         </section>
-        <!-- service area end  -->
 
         <!-- //////////////////////test_section////////////////////////////// -->
 
@@ -831,7 +839,8 @@
   <script src="assets/vendor/matter.js"></script>
   <script src="assets/vendor/throwable.js"></script>
   <script src="assets/js/magiccursor.js"></script>
-/////////////////////////////////////////////////////
+  <script src="assets/data/index_sction/section_index.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
