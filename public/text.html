@@ -1,99 +1,160 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GSAP Horizontal Scroll Section</title>
-  <style>
-    body, html {
-      margin: 0; padding: 0;
-      overflow-x: hidden;
-      font-family: Arial, sans-serif;
-    }
-    .spacer {
-      height: 100vh;
-      background: #ddd;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-    }
-    #horizontal-section {
-      position: relative;
-      background: #f1f1f1;
-    }
-    .sticky-container {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-    }
-    .horizontal-scroll {
-      display: flex;
-      gap: 20px;
-      height: 80vh;
-    }
-    .card {
-      min-width: 80vw;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-      flex-shrink: 0;
-    }
-  </style>
-</head>
-<body>
+<section class="service-area" id="horizontal-section">
+  <div class="container large">
+    <div class="section-header">
+      <div class="title-wrapper font-heading-recoleta-medium text-center">
+        <h2 class="section-title word-anim">Our Services</h2>
+      </div>
+    </div>
 
-<div class="spacer">قبل السكشن</div>
+    <div class="progress-bar" id="progressBar"></div>
 
-<section id="horizontal-section" dir="ltr" style="background-color: blue;">
-  <div class="sticky-container">
-    <div class="horizontal-scroll" id="horizontal-scroll">
-      <div class="card">1</div>
-      <div class="card">2</div>
-      <div class="card">3</div>
-      <div class="card">4</div>
-      <div class="card">5</div>
-      <div class="card">6</div>
-      <div class="card">7</div>
-      <div class="card">8</div>
+    <div class="services-wrapper-box relative">
+      <button id="prevBtn" class="nav-btn left-btn">‹</button>
+      <button id="nextBtn" class="nav-btn right-btn">›</button>
+
+      <div class="sticky-container">
+        <div class="services-wrapper-1" id="servicesContainer"></div>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="spacer">بعد السكشن</div>
+<div class="spacer" style="height:100vh; background:#ddd; display:flex; justify-content:center; align-items:center;">
+  بعد السكشن
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<style>
+body { margin:0; padding:0; overflow-x:hidden; font-family:Poppins,sans-serif; background:#0e0e0e; color:#fff; }
+.section-title { font-size:3.5rem; margin-bottom:40px; text-align:center; letter-spacing:-1px; background:linear-gradient(90deg,#ff6ec4,#7873f5); -webkit-background-clip:text; -webkit-text-fill-color:transparent; opacity:0; transform:translateY(50px);}
+.progress-bar {height:5px;width:0%;background:linear-gradient(90deg,#ff6ec4,#7873f5);border-radius:4px;margin:0 auto 30px;transition:width 0.2s ease-out;}
+.sticky-container {position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:stretch;}
+#servicesContainer {display:flex;gap:60px;align-items:stretch;height:100%;padding:0 10vw;will-change:transform;}
+.service-box {position:relative;min-width:55vw;height:70vh;border-radius:25px;overflow:hidden;background:#111;flex-shrink:0;display:flex;flex-direction:column;transition:transform 0.5s ease,box-shadow 0.5s ease;}
+.service-box:hover {transform:scale(1.05);box-shadow:0 20px 40px rgba(255,255,255,0.15);}
+.thumb {width:100%;height:100%;}
+.thumb video {width:100%;height:100%;object-fit:cover;display:block;transition:transform 2s ease;}
+.service-box:hover video {transform:scale(1.1);}
+.overlay {position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:25px;background:linear-gradient(180deg,rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.75) 100%);overflow-y:auto;opacity:0;pointer-events:none;transition:opacity 0.6s ease;}
+.overlay h3 {font-size:2rem;margin-bottom:15px;}
+.overlay ul {list-style:none;margin:0;padding:0;}
+.overlay ul li {font-size:1.05rem;margin:5px 0;}
+.nav-btn {position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.9);border:none;width:60px;height:60px;border-radius:50%;font-size:2rem;cursor:pointer;transition:all 0.3s ease;z-index:20;}
+.nav-btn:hover {background:linear-gradient(90deg,#ff6ec4,#7873f5);color:#fff;box-shadow:0 0 15px rgba(255,255,255,0.5);}
+.left-btn {left:40px;} .right-btn {right:40px;}
+
+@media (max-width:768px){
+  .sticky-container {position:relative;height:auto;}
+  #servicesContainer {flex-direction:column;gap:30px;height:auto;padding:0;}
+  .service-box {min-width:90%;height:auto;}
+  .overlay {opacity:1 !important;pointer-events:auto;}
+  .overlay h3,.overlay li {opacity:1 !important;transform:none !important;}
+  .nav-btn {display:none;}
+}
+</style>
+
 <script>
-  gsap.registerPlugin(ScrollTrigger);
+const services = [
+  { title:"Branding", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712576/18419658-hd_1920_1080_30fps_ajaqks.mp4", list:["UI UX Consulting","UX Research","Usability Testing","Wireframing","Prototyping"]},
+  { title:"UI-UX Design", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712548/12920659-hd_1920_1080_30fps_xg9jpi.mp4", list:["Creative Direction","Brand Identity","Branding Strategy","Graphic Design","Startup"]},
+  { title:"Development", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712578/8303104-hd_1920_1080_24fps_y87nso.mp4", list:["WordPress","Webflow","Laravel Framework","React & Flutter","Design System"]},
+  { title:"Digital Marketing", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759713619/VIDEO_1_WEBSITE22_gjmcv7.mp4", list:["Online Marketing","SEO-Marketing","Strategy","Market Research","Social Reform"]}
+];
 
-  const horizontalScroll = document.getElementById("horizontal-scroll");
-  const section = document.getElementById("horizontal-section");
-
-  // حساب العرض الكلي للمحتوى الأفقي
-  const totalWidth = horizontalScroll.scrollWidth;
-  const vw = window.innerWidth;
-
-  gsap.to(horizontalScroll, {
-    x: () => `-${totalWidth - vw}px`,
-    ease: "none",
-    scrollTrigger: {
-      trigger: section,
-      start: "top top",
-      end: () => `+=${totalWidth - vw}`,
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-    }
+function renderServices(containerId){
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+  services.forEach(service => {
+    const card = document.createElement("div"); card.className = "service-box";
+    const listItems = service.list.map(item => `<li>${item}</li>`).join("");
+    card.innerHTML = `<div class="thumb"><video autoplay muted loop playsinline><source src="${service.video}" type="video/mp4"></video></div><div class="overlay"><h3>${service.title}</h3><ul>${listItems}</ul></div>`;
+    container.appendChild(card);
   });
-</script>
+}
 
-</body>
-</html>
+document.addEventListener("DOMContentLoaded", function(){
+  renderServices("servicesContainer");
+  gsap.registerPlugin(ScrollTrigger);
+  const container = document.getElementById("servicesContainer");
+  const section = document.getElementById("horizontal-section");
+  const progressBar = document.getElementById("progressBar");
+
+  gsap.to(".section-title",{opacity:1,y:0,duration:1.2,ease:"power3.out",scrollTrigger:{trigger:section,start:"top 80%"}});
+
+  function calculateScrollDistance(container){
+    const cards = container.querySelectorAll(".service-box");
+    const style = getComputedStyle(container);
+    const gap = parseInt(style.gap) || 60;
+    const paddingLeft = parseInt(style.paddingLeft) || 0;
+    const paddingRight = parseInt(style.paddingRight) || 0;
+    let totalCardsWidth = 0;
+    cards.forEach(card => totalCardsWidth += card.offsetWidth);
+    totalCardsWidth += gap * (cards.length -1) + paddingLeft + paddingRight;
+    return totalCardsWidth - window.innerWidth;
+  }
+
+  function initScroll(){
+    if(window.innerWidth <= 768) return;
+
+    const scrollDistance = calculateScrollDistance(container);
+
+    const tl = gsap.timeline({
+      scrollTrigger:{
+        trigger:section,
+        start:"top top",
+        end: ()=>`+=${scrollDistance}`,
+        scrub:1,
+        pin:true,
+        anticipatePin:1,
+        onUpdate: self => {progressBar.style.width = `${self.progress*100}%`;}
+      }
+    });
+
+    tl.to(container,{x: -scrollDistance, ease:"none"});
+
+    const cards = gsap.utils.toArray(".service-box");
+    cards.forEach(card=>{
+      const overlay = card.querySelector(".overlay");
+      const title = overlay.querySelector("h3");
+      const listItems = overlay.querySelectorAll("li");
+      gsap.set([overlay,title,listItems],{opacity:0});
+
+      ScrollTrigger.create({
+        trigger:card,
+        containerAnimation:tl,
+        start:"left center",
+        end:"right center",
+        onEnter:()=>{
+          gsap.to(overlay,{opacity:1,duration:0.6});
+          gsap.to(title,{opacity:1,y:0,duration:0.6,ease:"power3.out"});
+          gsap.to(listItems,{opacity:1,y:0,stagger:0.1,duration:0.4});
+          gsap.fromTo(card,{scale:0.95},{scale:1,duration:0.6,ease:"power3.out"});
+        },
+        onLeaveBack:()=>{gsap.to(overlay,{opacity:0,duration:0.5});}
+      });
+    });
+  }
+
+  // أزرار التنقل
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+  let currentX = 0;
+  const step = window.innerWidth * 0.7;
+
+  nextBtn.addEventListener("click", () => {
+    const maxX = calculateScrollDistance(container);
+    currentX = Math.min(currentX + step, maxX);
+    gsap.to(container, {x:-currentX, duration:0.8, ease:"power3.out"});
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentX = Math.max(currentX - step, 0);
+    gsap.to(container, {x:-currentX, duration:0.8, ease:"power3.out"});
+  });
+
+  window.addEventListener("load", ()=>{initScroll(); ScrollTrigger.refresh();});
+  window.addEventListener("resize", ()=>ScrollTrigger.refresh());
+});
+</script>

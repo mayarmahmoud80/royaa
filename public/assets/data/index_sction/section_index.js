@@ -1,5 +1,140 @@
 /************************************services section************************************* */
+const element = document.getElementById("horizontal-section");
+const element2 = document.getElementById("horizontal-section2");
+const widthScreen = window.innerWidth;
+
+if(element){ 
+  if(widthScreen <= 768){
+    if(element2) {
+      element2.classList.remove("d-none");
+      element2.classList.add("d-block");  
+    }
+    element.classList.remove("d-block");
+    element.classList.add("d-none");
+  } else {
+    element.classList.remove("d-none");
+    element.classList.add("d-block");
+    if(element2) {
+      element2.classList.remove("d-block");
+      element2.classList.add("d-none");
+    }
+  }
+}
+
+ 
 const services = [
+  { title:"Branding", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712576/18419658-hd_1920_1080_30fps_ajaqks.mp4", list:["UI UX Consulting","UX Research","Usability Testing","Wireframing","Prototyping"]},
+  { title:"UI-UX Design", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712548/12920659-hd_1920_1080_30fps_xg9jpi.mp4", list:["Creative Direction","Brand Identity","Branding Strategy","Graphic Design","Startup"]},
+  { title:"Development", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712578/8303104-hd_1920_1080_24fps_y87nso.mp4", list:["WordPress","Webflow","Laravel Framework","React & Flutter","Design System"]},
+  { title:"Digital Marketing", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759713619/VIDEO_1_WEBSITE22_gjmcv7.mp4", list:["Online Marketing","SEO-Marketing","Strategy","Market Research","Social Reform"]}
+];
+
+function renderServices(containerId){
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+  services.forEach(service => {
+    const card = document.createElement("div"); card.className = "service-box";
+    const listItems = service.list.map(item => `<li>${item}</li>`).join("");
+    card.innerHTML = `<div class="thumb"><video autoplay muted loop playsinline><source src="${service.video}" type="video/mp4"></video></div><div class="overlay"><h3>${service.title}</h3><ul>${listItems}</ul></div>`;
+    container.appendChild(card);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  renderServices("servicesContainer");
+  gsap.registerPlugin(ScrollTrigger);
+  const container = document.getElementById("servicesContainer");
+  const section = document.getElementById("horizontal-section");
+  const progressBar = document.getElementById("progressBar");
+
+  gsap.to(".section-title",{opacity:1,y:0,duration:1.2,ease:"power3.out",scrollTrigger:{trigger:section,start:"top 80%"}});
+
+  function calculateScrollDistance(container){
+    const cards = container.querySelectorAll(".service-box");
+    const style = getComputedStyle(container);
+    const gap = parseInt(style.gap) || 60;
+    const paddingLeft = parseInt(style.paddingLeft) || 0;
+    const paddingRight = parseInt(style.paddingRight) || 0;
+    let totalCardsWidth = 0;
+    cards.forEach(card => totalCardsWidth += card.offsetWidth);
+    totalCardsWidth += gap * (cards.length -1) + paddingLeft + paddingRight + 200;
+    console,console.log(totalCardsWidth +">"+ cards.length  +">"+ paddingLeft  +">"+ paddingRight);
+    
+    return totalCardsWidth - window.innerWidth;
+  }
+
+function initScroll(){
+  const container = document.getElementById("servicesContainer");
+  const section = document.getElementById("horizontal-section");
+  const progressBar = document.getElementById("progressBar");
+
+  if(!section || window.innerWidth <= 768) return;
+
+  const scrollDistance = calculateScrollDistance(container);
+
+  const tl = gsap.timeline({
+    scrollTrigger:{
+      trigger:section,
+      start:"top top",
+      end: ()=>`+=${scrollDistance}`,
+      scrub:1,
+      pin:true,
+      anticipatePin:1,
+      onUpdate: self => {progressBar.style.width = `${self.progress*100}%`;}
+    }
+  });
+
+  tl.to(container,{x: -scrollDistance, ease:"none"});
+
+  const cards = gsap.utils.toArray(".service-box");
+  if(cards.length === 0) return; 
+
+  cards.forEach(card=>{
+    const overlay = card.querySelector(".overlay");
+    if(!overlay) return;
+    const title = overlay.querySelector("h3");
+    const listItems = overlay.querySelectorAll("li");
+    gsap.set([overlay,title,listItems],{opacity:0});
+
+    ScrollTrigger.create({
+      trigger:card,
+      containerAnimation:tl,
+      start:"left center",
+      end:"right center",
+      onEnter:()=>{
+        gsap.to(overlay,{opacity:1,duration:0.6});
+        gsap.to(title,{opacity:1,y:0,duration:0.6,ease:"power3.out"});
+        gsap.to(listItems,{opacity:1,y:0,stagger:0.1,duration:0.4});
+        gsap.fromTo(card,{scale:0.95},{scale:1,duration:0.6,ease:"power3.out"});
+      },
+      onLeaveBack:()=>{gsap.to(overlay,{opacity:0,duration:0.5});}
+    });
+  });
+}
+
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+  let currentX = 0;
+  const step = window.innerWidth * 0.7;
+
+  nextBtn.addEventListener("click", () => {
+    const maxX = calculateScrollDistance(container);
+    currentX = Math.min(currentX + step, maxX);
+    gsap.to(container, {x:-currentX, duration:0.8, ease:"power3.out"});
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentX = Math.max(currentX - step, 0);
+    gsap.to(container, {x:-currentX, duration:0.8, ease:"power3.out"});
+  });
+
+  window.addEventListener("load", ()=>{initScroll(); ScrollTrigger.refresh();});
+  window.addEventListener("resize", ()=>ScrollTrigger.refresh());
+});
+
+/************************************services section************************************* */
+
+/*const services = [
   {
     title: "Branding",
     video: "https://res.cloudinary.com/doizn3h1h/video/upload/v1759712576/18419658-hd_1920_1080_30fps_ajaqks.mp4",
@@ -82,11 +217,10 @@ function renderServices(containerId) {
 
 document.addEventListener("DOMContentLoaded", function () {
   renderServices("servicesContainer");
-});
+});*/
 
 /***********************************project section***************************************** */
 
-// بيانات البراندات
 const brands = [
   {
     bg: "assets/imgs/roya-imgs/zee_brand.png",
@@ -99,21 +233,19 @@ const brands = [
     logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
     altBg: "Woven Brand",
     altLogo: "Woven Logo"
-  },
-  // ممكن تضيف كروت تانية هنا بنفس الشكل 👇
-  // {
-  //   bg: "...",
-  //   logo: "...",
-  //   altBg: "...",
-  //   altLogo: "..."
-  // }
+  }
 ];
 
 const brandRow = document.getElementById("brand-row");
 
-brands.forEach(brand => {
+brands.forEach((brand, index) => {
   const card = document.createElement("div");
   card.className = "card__2 col-lg-6 col-md-8 col-sm-12";
+
+  card.setAttribute("data-aos", "zoom-in");
+  card.setAttribute("data-aos-duration", "1000");
+  card.setAttribute("data-aos-delay", `${index * 200}`);
+  card.setAttribute("data-aos-easing", "ease-out-cubic");
 
   card.innerHTML = `
     <img class="bg" src="${brand.bg}" alt="${brand.altBg}">
@@ -123,3 +255,88 @@ brands.forEach(brand => {
 
   brandRow.appendChild(card);
 });
+
+AOS.refresh();
+
+
+/*************teamGrid*************************** */
+
+const teamGrid = document.getElementById('teamGrid');
+const teamSection = document.querySelector('.team-section');
+
+const teamMembers = [
+  { name: "Mr. Mohamed", job: "", img: "assets/imgs/roya-imgs/person_image/14_.png" },
+  { name: "Islam", job: "", img: "assets/imgs/roya-imgs/person_image/islam2.png" },
+  { name: "Amr", job: "", img: "assets/imgs/roya-imgs/person_image/amr2.png" },
+  { name: "Gana", job: "", img: "assets/imgs/roya-imgs/person_image/gana.png" },
+  { name: "Hayam", job: "", img: "assets/imgs/roya-imgs/person_image/hayam.jpg" },
+  { name: "Manar", job: "", img: "assets/imgs/roya-imgs/person_image/manar.jpg" },
+  { name: "Omnia", job: "", img: "assets/imgs/roya-imgs/person_image/omnia.jpg" },
+    { name: "Mr. Mohamed", job: "", img: "assets/imgs/roya-imgs/person_image/14_.png" },
+  { name: "Islam", job: "", img: "assets/imgs/roya-imgs/person_image/islam2.png" },
+  { name: "Amr", job: "", img: "assets/imgs/roya-imgs/person_image/amr2.png" },
+  { name: "Gana", job: "", img: "assets/imgs/roya-imgs/person_image/gana.png" },
+  { name: "Hayam", job: "", img: "assets/imgs/roya-imgs/person_image/hayam.jpg" },
+  { name: "Manar", job: "", img: "assets/imgs/roya-imgs/person_image/manar.jpg" },
+  { name: "Omnia", job: "", img: "assets/imgs/roya-imgs/person_image/omnia.jpg" },
+];
+
+teamMembers.forEach((member, index) => {
+  const card = document.createElement('div');
+  card.className = 'team-card';
+  card.style.setProperty('--delay', `${index * 100}ms`);
+  card.innerHTML = `
+    <img src="${member.img}" alt="${member.name}">
+    <div class="info-box text-center mt-2">
+      <h3 class="text-gray-200 font-semibold text-sm">${member.name}</h3>
+      <p class="text-gray-400 text-xs">${member.job}</p>
+    </div>
+  `;
+  teamGrid.appendChild(card);
+});
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const cards = teamGrid.querySelectorAll('.team-card');
+    if (entry.isIntersecting) {
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('animate');
+        }, i * 100);
+      });
+    } else {
+      cards.forEach(card => {
+        card.classList.remove('animate');
+      });
+    }
+  });
+}, { threshold: 0.3 }); 
+
+sectionObserver.observe(teamSection);
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+teamGrid.addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX - teamGrid.offsetLeft;
+  scrollLeft = teamGrid.scrollLeft;
+  teamGrid.style.cursor = "grabbing";
+});
+teamGrid.addEventListener('mouseleave', () => {
+  isDown = false;
+  teamGrid.style.cursor = "grab";
+});
+teamGrid.addEventListener('mouseup', () => {
+  isDown = false;
+  teamGrid.style.cursor = "grab";
+});
+teamGrid.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - teamGrid.offsetLeft;
+  const walk = (x - startX) * 2;
+  teamGrid.scrollLeft = scrollLeft - walk;
+});
+
