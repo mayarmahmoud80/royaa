@@ -29654,8 +29654,7 @@ START: Footer CSS
   filter: grayscale(0%);
   opacity: 1;
   transform: scale(1.08);
-
-filter: drop-shadow(0 4px 10px #ffffff6e);
+filter: drop-shadow(0 4px 10px #ffffffbb);
 }
 
 /******************logo_anmiation**************************/
@@ -29683,7 +29682,6 @@ filter: drop-shadow(0 4px 10px #ffffff6e);
 .logo-grid img.animate {
   opacity: 1;
   transform: translateY(0) scale(1);
-  filter: drop-shadow(0 6px 14px rgba(255,255,255,0.3));
 }
 
 /********************************************/
@@ -30199,5 +30197,6 @@ filter: drop-shadow(0 4px 10px #ffffff6e);
 .card__2:hover img.logo {
   transform: scale(1.1);
 }
+/*****************************/
 
 /*# sourceMappingURL=style.css.map */

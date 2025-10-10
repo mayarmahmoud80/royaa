@@ -223,13 +223,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const brands = [
   {
-    bg: "assets/imgs/roya-imgs/zee_brand.png",
+    bg: "assets/imgs/roya-imgs/zee_brand.jpg",
     logo: "assets/imgs/roya-imgs/zee_brand_logo.png",
     altBg: "Zee Brand",
     altLogo: "Zee Logo"
   },
   {
-    bg: "assets/imgs/roya-imgs/woven.JPG",
+    bg: "assets/imgs/roya-imgs/woven2.JPG",
     logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
     altBg: "Woven Brand",
     altLogo: "Woven Logo"
@@ -248,9 +248,9 @@ brands.forEach((brand, index) => {
   card.setAttribute("data-aos-easing", "ease-out-cubic");
 
   card.innerHTML = `
-    <img class="bg" src="${brand.bg}" alt="${brand.altBg}">
+    <img class="bg" src="${brand.bg}" alt="${brand.altBg}" loading="lazy">
     <div class="overlay"></div>
-    <img class="logo" src="${brand.logo}" alt="${brand.altLogo}">
+    <img class="logo" src="${brand.logo}" alt="${brand.altLogo}" loading="lazy">
   `;
 
   brandRow.appendChild(card);
@@ -286,7 +286,7 @@ teamMembers.forEach((member, index) => {
   card.className = 'team-card';
   card.style.setProperty('--delay', `${index * 100}ms`);
   card.innerHTML = `
-    <img src="${member.img}" alt="${member.name}">
+    <img src="${member.img}" alt="${member.name}" loading="lazy">
     <div class="info-box text-center mt-2">
       <h3 class="text-gray-200 font-semibold text-sm">${member.name}</h3>
       <p class="text-gray-400 text-xs">${member.job}</p>
