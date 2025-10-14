@@ -14575,9 +14575,6 @@ only screen and (max-width: 1919px) {
 
 /* about page css */
 
-.about-area-details {
-    /* moving gallery style  */
-}
 
 .about-area-details .section-header {
     border-top: 1px solid var(--border);
