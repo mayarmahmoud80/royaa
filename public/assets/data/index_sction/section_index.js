@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let totalCardsWidth = 0;
     cards.forEach(card => totalCardsWidth += card.offsetWidth);
     totalCardsWidth += gap * (cards.length -1) + paddingLeft + paddingRight + 200;
-    console,console.log(totalCardsWidth +">"+ cards.length  +">"+ paddingLeft  +">"+ paddingRight);
     
     return totalCardsWidth - window.innerWidth;
   }
@@ -225,8 +224,8 @@ const brands = [
   {
     bg: "assets/imgs/roya-imgs/project_img/3.png",
     logo: "assets/imgs/roya-imgs/zee_brand_logo.png",
-    altBg: "Zee Brand",
-    altLogo: "Zee Logo"
+    altBg: "Z Brand",
+    altLogo: "Z Logo"
   },
   {
     bg: "assets/imgs/roya-imgs/project_img/1.png",
@@ -272,7 +271,14 @@ const teamGrid = document.getElementById('teamGrid');
 const teamSection = document.querySelector('.team-section');
 
 const teamMembers = [
-  { name: "amr", job: "", img: "assets/imgs//roya-imgs/person_image/amr.png" },
+
+
+  { name: "Amr", job: "", img: "assets/imgs//roya-imgs/person_image/amr.png" },
+  { name: "Islam", job: "", img: "assets/imgs//roya-imgs/person_image/islam.jpg" },
+  { name: "Mohamed", job: "", img: "assets/imgs//roya-imgs/person_image/mr_mohamed.jpg" },
+  { name: "Omar", job: "", img: "assets/imgs//roya-imgs/person_image/omar.jpg" },
+  { name: "Hayam", job: "", img: "assets/imgs//roya-imgs/person_image/hayam.jpg" },
+/*
   { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
   { name: "enjy", job: "", img: "assets/imgs//roya-imgs/person_image/enjy.jpg" },
   { name: "Gana", job: "", img: "assets/imgs//roya-imgs/person_image/gana.png" },
@@ -290,7 +296,7 @@ const teamMembers = [
   { name: "Nour", job: "", img: "assets/imgs//roya-imgs/person_image/Nour.jpg" },
   { name: "omar", job: "", img: "assets/imgs//roya-imgs/person_image/omar.jpg" },
   { name: "omnia", job: "", img: "assets/imgs//roya-imgs/person_image/omnia.jpg" },
-  { name: "sama", job: "", img: "assets/imgs//roya-imgs/person_image/sama.jpg" }
+  { name: "sama", job: "", img: "assets/imgs//roya-imgs/person_image/sama.jpg" }*/
 ];
 
 teamMembers.forEach((member, index) => {
