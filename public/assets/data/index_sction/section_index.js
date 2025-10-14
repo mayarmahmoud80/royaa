@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let totalCardsWidth = 0;
     cards.forEach(card => totalCardsWidth += card.offsetWidth);
     totalCardsWidth += gap * (cards.length -1) + paddingLeft + paddingRight + 200;
-    console,console.log(totalCardsWidth +">"+ cards.length  +">"+ paddingLeft  +">"+ paddingRight);
     
     return totalCardsWidth - window.innerWidth;
   }
@@ -223,16 +222,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const brands = [
   {
-    bg: "assets/imgs/roya-imgs/zee_brand.jpg",
+    bg: "assets/imgs/roya-imgs/project_img/3.png",
     logo: "assets/imgs/roya-imgs/zee_brand_logo.png",
-    altBg: "Zee Brand",
-    altLogo: "Zee Logo"
+    altBg: "Z Brand",
+    altLogo: "Z Logo"
   },
   {
-    bg: "assets/imgs/roya-imgs/woven2.JPG",
+    bg: "assets/imgs/roya-imgs/project_img/1.png",
     logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
     altBg: "Woven Brand",
     altLogo: "Woven Logo"
+  },{
+    bg: "assets/imgs/roya-imgs/project_img/4.png",
+    altBg: "Zalia Brand",
+  },
+  {
+    bg: "assets/imgs/roya-imgs/project_img/2.png",
+    altBg: "Fiorella Brand",
   }
 ];
 
@@ -265,20 +271,32 @@ const teamGrid = document.getElementById('teamGrid');
 const teamSection = document.querySelector('.team-section');
 
 const teamMembers = [
-  { name: "Mr. Mohamed", job: "", img: "assets/imgs/roya-imgs/person_image/14_.png" },
-  { name: "Islam", job: "", img: "assets/imgs/roya-imgs/person_image/islam2.png" },
-  { name: "Amr", job: "", img: "assets/imgs/roya-imgs/person_image/amr2.png" },
-  { name: "Gana", job: "", img: "assets/imgs/roya-imgs/person_image/gana.png" },
-  { name: "Hayam", job: "", img: "assets/imgs/roya-imgs/person_image/hayam.jpg" },
-  { name: "Manar", job: "", img: "assets/imgs/roya-imgs/person_image/manar.jpg" },
-  { name: "Omnia", job: "", img: "assets/imgs/roya-imgs/person_image/omnia.jpg" },
-    { name: "Mr. Mohamed", job: "", img: "assets/imgs/roya-imgs/person_image/14_.png" },
-  { name: "Islam", job: "", img: "assets/imgs/roya-imgs/person_image/islam2.png" },
-  { name: "Amr", job: "", img: "assets/imgs/roya-imgs/person_image/amr2.png" },
-  { name: "Gana", job: "", img: "assets/imgs/roya-imgs/person_image/gana.png" },
-  { name: "Hayam", job: "", img: "assets/imgs/roya-imgs/person_image/hayam.jpg" },
-  { name: "Manar", job: "", img: "assets/imgs/roya-imgs/person_image/manar.jpg" },
-  { name: "Omnia", job: "", img: "assets/imgs/roya-imgs/person_image/omnia.jpg" },
+
+
+  { name: "Amr", job: "", img: "assets/imgs//roya-imgs/person_image/amr.png" },
+  { name: "Islam", job: "", img: "assets/imgs//roya-imgs/person_image/islam.jpg" },
+  { name: "Mohamed", job: "", img: "assets/imgs//roya-imgs/person_image/mr_mohamed.jpg" },
+  { name: "Omar", job: "", img: "assets/imgs//roya-imgs/person_image/omar.jpg" },
+  { name: "Hayam", job: "", img: "assets/imgs//roya-imgs/person_image/hayam.jpg" },
+/*
+  { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
+  { name: "enjy", job: "", img: "assets/imgs//roya-imgs/person_image/enjy.jpg" },
+  { name: "Gana", job: "", img: "assets/imgs//roya-imgs/person_image/gana.png" },
+  { name: "Hayam", job: "", img: "assets/imgs//roya-imgs/person_image/hayam.jpg" },
+  { name: "Islam", job: "", img: "assets/imgs//roya-imgs/person_image/islam.jpg" },
+  { name: "ismail", job: "", img: "assets/imgs//roya-imgs/person_image/ismail.jpg" },
+    { name: "mahran", job: "", img: "assets/imgs//roya-imgs/person_image/mahran.jpg" },
+  { name: "Manar", job: "", img: "assets/imgs//roya-imgs/person_image/manar.jpg" },
+  { name: "mario", job: "", img: "assets/imgs//roya-imgs/person_image/mario.jpg" },
+  { name: "marwa", job: "", img: "assets/imgs//roya-imgs/person_image/marwa.jpg" },
+  { name: "Mirna", job: "", img: "assets/imgs//roya-imgs/person_image/Mirna.jpg" },
+  { name: "Moha", job: "", img: "assets/imgs//roya-imgs/person_image/Moha.jpg" },
+  { name: "mohand", job: "", img: "assets/imgs//roya-imgs/person_image/mohand.jpg" },
+  { name: "mr.mohamed", job: "", img: "assets/imgs//roya-imgs/person_image/mr_mohamed.jpg" },
+  { name: "Nour", job: "", img: "assets/imgs//roya-imgs/person_image/Nour.jpg" },
+  { name: "omar", job: "", img: "assets/imgs//roya-imgs/person_image/omar.jpg" },
+  { name: "omnia", job: "", img: "assets/imgs//roya-imgs/person_image/omnia.jpg" },
+  { name: "sama", job: "", img: "assets/imgs//roya-imgs/person_image/sama.jpg" }*/
 ];
 
 teamMembers.forEach((member, index) => {

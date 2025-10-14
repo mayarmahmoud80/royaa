@@ -25,7 +25,7 @@
       "Motion graphics and animation",
       "Strategic content planning and calendar development"
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-content.jpeg"
+    "banner": "assets/imgs/roya-imgs/banner-content.jpeg"
   },
   {
     "id": "social-media",
@@ -39,7 +39,7 @@
       "Community engagement and customer support",
       "Data‑driven optimization and growth strategies"
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-social.png"
+    "banner": "assets/imgs/roya-imgs/banner-social.png"
   },
   {
     "id": "advertising",
@@ -53,7 +53,7 @@
       "Performance tracking and strategy refinement",
       "Conversion optimization for maximum ROI"
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-advertising.png"
+    "banner": "assets/imgs/roya-imgs/banner-advertising.png"
   },
   {
     "id": "creative-campaigns",
@@ -67,7 +67,7 @@
       "Audience activation and engagement strategies",
       "Measurable outcomes to assess success"
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-creative.png"
+    "banner": "assets/imgs/roya-imgs/banner-creative.png"
   },
   {
     "id": "media-production",
@@ -81,7 +81,7 @@
       "Post‑production editing, color grading and sound design",
       "Creative direction and art direction for shoots"
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-media.jpg"
+    "banner": "assets/imgs/roya-imgs/banner-media.jpg"
   },
   {
     "id": "print-outdoor",
@@ -95,7 +95,7 @@
       "High‑quality production management and installation",
       "Collateral design: brochures, roll‑ups, stands, packaging, etc."
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-print.png"
+    "banner": "assets/imgs/roya-imgs/banner-print.png"
   },
   {
     "id": "seo",
@@ -109,7 +109,7 @@
       "On‑page and off‑page SEO tactics",
       "Ongoing monitoring and performance reporting"
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-seo.jpg"
+    "banner": "assets/imgs/roya-imgs/banner-seo.jpg"
   },
   {
     "id": "measurement",
@@ -123,7 +123,7 @@
       "Campaign performance reporting",
       "Data‑driven recommendations for continuous improvement"
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-analytics.jpg"
+    "banner": "assets/imgs/roya-imgs/banner-analytics.jpg"
   },
   {
     "id": "web-development",
@@ -137,6 +137,6 @@
       "E‑commerce solutions and interactive platforms",
       "Ongoing maintenance, performance optimization and security audits"
     ],
-    "banner": "/assets/imgs/roya-imgs/banner-web.jpg"
+    "banner": "assets/imgs/roya-imgs/banner-web.jpg"
   }
 ]
