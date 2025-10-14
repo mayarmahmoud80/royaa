@@ -15,16 +15,16 @@
       "Color palette and typography selection",
       "Brand application examples"
     ],
-    "banner": "/assets/imgs/roya-imgs/zalila/zalila-banner.jpg",
+    "banner": "assets/imgs/roya-imgs/zalila/zalila-banner.jpg",
     "gallery": [
-      "/assets/imgs/roya-imgs/zalila/zalila_1.png",
-      "/assets/imgs/roya-imgs/zalila/zalila_3.png",
-      "/assets/imgs/roya-imgs/zalila/zalila_2.png",
-      "/assets/imgs/roya-imgs/zalila/zalila-1.png",
-      "/assets/imgs/roya-imgs/zalila/zalila-2.png",
-      "/assets/imgs/roya-imgs/zalila/zalila-3.png"
+      "assets/imgs/roya-imgs/zalila/zalila_1.png",
+      "assets/imgs/roya-imgs/zalila/zalila_3.png",
+      "assets/imgs/roya-imgs/zalila/zalila_2.png",
+      "assets/imgs/roya-imgs/zalila/zalila-1.png",
+      "assets/imgs/roya-imgs/zalila/zalila-2.png",
+      "assets/imgs/roya-imgs/zalila/zalila-3.png"
     ],
-    "banner2": "/assets/imgs/roya-imgs/zalila/zalila-banner_2.png"
+    "banner2": "assets/imgs/roya-imgs/zalila/zalila-banner_2.png"
   },
   {
     "id": "nughayer-branding",
@@ -42,16 +42,16 @@
       "Brand strategy and positioning",
       "Social media visual guidelines"
     ],
-    "banner": "/assets/imgs/roya-imgs/noghayer/Future_banner_1.png",
+    "banner": "assets/imgs/roya-imgs/noghayer/Future_banner_1.png",
     "gallery": [
-      "/assets/imgs/roya-imgs/noghayer/noghayer-2.png",
-      "/assets/imgs/roya-imgs/noghayer/noghayer-1.png",
-      "/assets/imgs/roya-imgs/noghayer/noghayer-3.png",
-      "/assets/imgs/roya-imgs/noghayer/noghayer_1.png",
-      "/assets/imgs/roya-imgs/noghayer/noghayer_2.png",
-      "/assets/imgs/roya-imgs/noghayer/noghayer_3.png"
+      "assets/imgs/roya-imgs/noghayer/noghayer-2.png",
+      "assets/imgs/roya-imgs/noghayer/noghayer-1.png",
+      "assets/imgs/roya-imgs/noghayer/noghayer-3.png",
+      "assets/imgs/roya-imgs/noghayer/noghayer_1.png",
+      "assets/imgs/roya-imgs/noghayer/noghayer_2.png",
+      "assets/imgs/roya-imgs/noghayer/noghayer_3.png"
     ],
-    "banner2": "/assets/imgs/roya-imgs/noghayer/Future_banner_2.png"
+    "banner2": "assets/imgs/roya-imgs/noghayer/Future_banner_2.png"
   },
   {
     "id": "sadaf-branding",
@@ -69,16 +69,16 @@
       "Customer experience guidelines",
       "Premium packaging design"
     ],
-    "banner": "/assets/imgs/roya-imgs/sadaf/sdaf-banner_1.png",
+    "banner": "assets/imgs/roya-imgs/sadaf/sdaf-banner_1.png",
     "gallery": [
-      "/assets/imgs/roya-imgs/sadaf/sadaf-1.png",
-      "/assets/imgs/roya-imgs/sadaf/sadaf-2.png",
-      "/assets/imgs/roya-imgs/sadaf/sadaf-2.png",
-      "/assets/imgs/roya-imgs/sadaf/sadaf_1.png",
-      "/assets/imgs/roya-imgs/sadaf/sadaf_2.png",
-      "/assets/imgs/roya-imgs/sadaf/sadaf_3.png"
+      "assets/imgs/roya-imgs/sadaf/sadaf-1.png",
+      "assets/imgs/roya-imgs/sadaf/sadaf-2.png",
+      "assets/imgs/roya-imgs/sadaf/sadaf-2.png",
+      "assets/imgs/roya-imgs/sadaf/sadaf_1.png",
+      "assets/imgs/roya-imgs/sadaf/sadaf_2.png",
+      "assets/imgs/roya-imgs/sadaf/sadaf_3.png"
     ],
-    "banner2": "/assets/imgs/roya-imgs/sadaf/sdaf-banner_2.png"
+    "banner2": "assets/imgs/roya-imgs/sadaf/sdaf-banner_2.png"
   },
   {
     "id": "alhijaz-power",
@@ -96,16 +96,16 @@
       "Brand guidelines and applications",
       "Marketing collateral design"
     ],
-    "banner": "/assets/imgs/roya-imgs/alhejaz/Al-Hejaz-banner.jpg",
+    "banner": "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-banner.jpg",
     "gallery": [
-      "/assets/imgs/roya-imgs/alhejaz/Al-Hejaz-1.png",
-      "/assets/imgs/roya-imgs/alhejaz/Al-Hejaz-2.png",
-      "/assets/imgs/roya-imgs/alhejaz/Al-Hejaz-3.png",
-      "/assets/imgs/roya-imgs/alhejaz/Al-Hejaz_1.png",
-      "/assets/imgs/roya-imgs/alhejaz/Al-Hejaz_2.png",
-      "/assets/imgs/roya-imgs/alhejaz/Al-Hejaz_3.png"
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-1.png",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-2.png",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-3.png",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_1.png",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_2.png",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_3.png"
     ],
-    "banner2": "/assets/imgs/roya-imgs/alhejaz/Al-Hejaz-banner_1.png"
+    "banner2": "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-banner_1.png"
 
   },
   {
@@ -124,17 +124,17 @@
       "Client presentation materials",
       "Agency brand guidelines"
     ],
-    "banner": "/assets/imgs/roya-imgs/atqen/Atqen_banner_1.png",
+    "banner": "assets/imgs/roya-imgs/atqen/Atqen_banner_1.png",
     "gallery": [
-      "/assets/imgs/roya-imgs/atqen/Atqen_1.png",
-      "/assets/imgs/roya-imgs/atqen/Atqen_2.png",
-      "/assets/imgs/roya-imgs/atqen/Atqen_banner_2.png",
-      "/assets/imgs/roya-imgs/atqen/Atqen-1.png",
-      "/assets/imgs/roya-imgs/atqen/Atqen-2.png",
-      "/assets/imgs/roya-imgs/atqen/Atqen-3.png"
+      "assets/imgs/roya-imgs/atqen/Atqen_1.png",
+      "assets/imgs/roya-imgs/atqen/Atqen_2.png",
+      "assets/imgs/roya-imgs/atqen/Atqen_banner_2.png",
+      "assets/imgs/roya-imgs/atqen/Atqen-1.png",
+      "assets/imgs/roya-imgs/atqen/Atqen-2.png",
+      "assets/imgs/roya-imgs/atqen/Atqen-3.png"
     ],
 
-    "banner2": "/assets/imgs/roya-imgs/atqen/Atqen_banner.png"
+    "banner2": "assets/imgs/roya-imgs/atqen/Atqen_banner.png"
 
   },
   {
@@ -153,43 +153,33 @@
       "Website design and development",
       "Digital marketing campaign"
     ],
-    "banner": "/assets/imgs/roya-imgs/woven/woven-banner.jpg",
+    "banner": "assets/imgs/roya-imgs/woven/woven-banner.jpg",
     "gallery": [
-      "/assets/imgs/roya-imgs/woven/woven-1.png",
-      "/assets/imgs/roya-imgs/woven/woven-2.png",
-      "/assets/imgs/roya-imgs/woven/woven-3.png",
-      "/assets/imgs/roya-imgs/woven/woven_1.png",
-      "/assets/imgs/roya-imgs/woven/woven_2.png",
-      "/assets/imgs/roya-imgs/woven/woven_3.png"
+      "assets/imgs/roya-imgs/woven/woven-1.png",
+      "assets/imgs/roya-imgs/woven/woven-2.png",
+      "assets/imgs/roya-imgs/woven/woven-3.png",
+      "assets/imgs/roya-imgs/woven/woven_1.png",
+      "assets/imgs/roya-imgs/woven/woven_2.png",
+      "assets/imgs/roya-imgs/woven/woven_3.png"
     ],
-    "banner2": "/assets/imgs/roya-imgs/woven/woven-banner2.png"
+    "banner2": "assets/imgs/roya-imgs/woven/woven-banner2.png"
 
   },
+   {
+    "id": "Z-branding",
+    "slug": "Z-branding-2025",
+    "title": "Z Branding",
+    "category": "Branding",
+    "year": "2025",
+    "banner": "assets/imgs/roya-imgs/project_img/3.png"
+
+  }, 
   {
-    "id": "youstove",
-    "slug": "youstove-2024",
-    "title": "YouStove",
-    "category": "Web",
-    "year": "2024",
-    "summary": "Brand identity, social media management, and website design for a kitchen appliance company.",
-    "overview": "YouStove approached us to help them establish a strong digital presence in the competitive kitchen appliance market.",
-    "overview2": "We developed a comprehensive digital strategy that included brand identity design, social media management, and website development.",
-    "overview3": "The project helped them increase online sales and build a loyal customer base.",
-    "deliverables": [
-      "Brand identity and visual system",
-      "Social media strategy and content",
-      "E-commerce website design",
-      "Digital advertising campaigns"
-    ],
-    "banner": "/assets/imgs/roya-imgs/youstove/YouStove-banner.jpg",
-    "gallery": [
-      "/assets/imgs/roya-imgs/youstove/youstove-1.png",
-      "/assets/imgs/roya-imgs/youstove/YouStove-2.png",
-      "/assets/imgs/roya-imgs/youstove/youstove-3.png",
-      "/assets/imgs/roya-imgs/youstove/youstove_1.png",
-      "/assets/imgs/roya-imgs/youstove/YouStove_2.png",
-      "/assets/imgs/roya-imgs/youstove/youstove_3.png"
-    ],
-    "banner2": "/assets/imgs/roya-imgs/youstove/YouStove-banner2.png"
+    "id": "Fiorella-branding",
+    "slug": "Fiorella-branding-2025",
+    "title": "Fiorella Branding",
+    "category": "Branding",
+    "year": "2025",
+    "banner": "assets/imgs/roya-imgs/project_img/2.png"
   }
 ]
