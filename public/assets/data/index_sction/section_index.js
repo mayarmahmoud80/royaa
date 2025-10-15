@@ -4,7 +4,7 @@ const element2 = document.getElementById("horizontal-section2");
 const widthScreen = window.innerWidth;
 
 if(element){ 
-  if(widthScreen <= 768){
+  if(widthScreen <= 1024){
     if(element2) {
       element2.classList.remove("d-none");
       element2.classList.add("d-block");  
@@ -222,22 +222,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const brands = [
   {
-    bg: "assets/imgs/roya-imgs/project_img/3.png",
+    bg: "assets/imgs/roya-imgs/project_img/z.png",
     logo: "assets/imgs/roya-imgs/zee_brand_logo.png",
     altBg: "Z Brand",
     altLogo: "Z Logo"
   },
   {
-    bg: "assets/imgs/roya-imgs/project_img/1.png",
+    bg: "assets/imgs/roya-imgs/project_img/woven.png",
     logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
     altBg: "Woven Brand",
     altLogo: "Woven Logo"
   },{
-    bg: "assets/imgs/roya-imgs/project_img/4.png",
+    bg: "assets/imgs/roya-imgs/project_img/zalila.png",
+    logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
+    altLogo: "Zalila Logo",
     altBg: "Zalia Brand",
+    
   },
   {
-    bg: "assets/imgs/roya-imgs/project_img/2.png",
+    bg: "assets/imgs/roya-imgs/project_img/fiorella.png",
+    logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
+    altLogo: "Fiorella Logo",
     altBg: "Fiorella Brand",
   }
 ];
@@ -277,7 +282,7 @@ const teamMembers = [
   { name: "Islam", job: "", img: "assets/imgs//roya-imgs/person_image/islam.jpg" },
   { name: "Mohamed", job: "", img: "assets/imgs//roya-imgs/person_image/mr_mohamed.jpg" },
   { name: "Omar", job: "", img: "assets/imgs//roya-imgs/person_image/omar.jpg" },
-  { name: "Hayam", job: "", img: "assets/imgs//roya-imgs/person_image/hayam.jpg" },
+  { name: "Hayam", job: "", img: "assets/imgs//roya-imgs/person_image/hayam.jpg" }
 /*
   { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
   { name: "enjy", job: "", img: "assets/imgs//roya-imgs/person_image/enjy.jpg" },

@@ -131,7 +131,7 @@
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper font-heading-recoleta-medium">
-                      <h2 class="section-title     data-delay="0.45">
+                      <h2 class="section-title"     data-delay="0.45">
                         We don’t sell ideas... 
                         <br>
                         We live them
@@ -320,6 +320,13 @@
   data-aos-delay="200" 
   data-aos-easing="ease-out-cubic">
   <div class="container-fluid large">
+
+    <div class="section-title-wrapper fade-anim mb-3">
+                  <div class="title-wrapper font-heading-recoleta-medium">
+                    <h2 class="section-title word-anim">Featured Work</h2>
+                  </div>
+                </div>
+
     <div id="brand-row" class="row justify-content-center gx-4 gy-4 mx-1">
     </div>
   </div>
@@ -334,14 +341,13 @@
               <div class="section-header">
                 <div class="section-title-wrapper fade-anim">
                   <div class="title-wrapper font-heading-recoleta-medium">
-                    <h2 class="section-title word-anim">Our Services 
-                       </h2>
+                    <h2 class="section-title word-anim">Our Services </h2>
                   </div>
                 </div>
               </div>
               <div class="services-wrapper-box">
                 <div class="services-wrapper-1 d-flex flex-wrap">
-                <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 60vh;">
+                <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 80vh;">
                   <div class="thumb">
                     <video id="bgVideo" autoplay muted loop playsinline >
                       <source src="https://res.cloudinary.com/doizn3h1h/video/upload/v1759712576/18419658-hd_1920_1080_30fps_ajaqks.mp4" type="video/mp4">
@@ -356,7 +362,7 @@
                             </ul>
                         </div>
                 </div>
-                 <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 60vh;">
+                 <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 80vh;">
   <div class="thumb">
     <video id="bgVideo" autoplay muted loop playsinline >
               <source src="https://res.cloudinary.com/doizn3h1h/video/upload/v1759712548/12920659-hd_1920_1080_30fps_xg9jpi.mp4" type="video/mp4">
@@ -371,7 +377,7 @@
     </ul>
   </div>
 </div>
-                 <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 60vh;">
+                 <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 80vh;">
   <div class="thumb">
     <video id="bgVideo" autoplay muted loop playsinline >
               <source src="https://res.cloudinary.com/doizn3h1h/video/upload/v1759712578/8303104-hd_1920_1080_24fps_y87nso.mp4" type="video/mp4">
@@ -387,7 +393,7 @@
     </ul>
   </div>
 </div>
-                 <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 60vh;">
+                 <div class="col-lg-6 col-md-12 service-box service-box_1 fade-anim" style="width: 48%; height: 80vh;">
   <div class="thumb">
     <video id="bgVideo" autoplay muted loop playsinline >
               <source src="https://res.cloudinary.com/doizn3h1h/video/upload/v1759713619/VIDEO_1_WEBSITE22_gjmcv7.mp4" type="video/mp4">
@@ -495,7 +501,7 @@
         
         <!-- funfact area start  -->
         <section class="funfact-area fade-anim my-5">
-  <div class="container large">
+  <div class="container large funfact-area-container">
     <div class="funfact-area-inner pin-area">
       <div class="section-header section-spacing-top pin-element">
         <div class="section-title-wrapper">
@@ -755,10 +761,9 @@
   <script src="assets/vendor/throwable.js"></script>
   <script src="assets/js/magiccursor.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script src="assets/data/index_sction/section_index.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/data/index_sction/section_index.js"></script>
+  
 <script>
   AOS.init();
 </script>
@@ -772,7 +777,7 @@
   <!-- Featured Projects Dynamic Content -->
   <script>
     // Load featured projects on home page
-    async function loadFeaturedProjects() {
+   /* async function loadFeaturedProjects() {
       try {
         const response = await fetch('assets/data/projects.json');
         const projects = await response.json();
@@ -817,7 +822,7 @@
     }
     
     // Load projects when page loads
-    document.addEventListener('DOMContentLoaded', loadFeaturedProjects);
+    document.addEventListener('DOMContentLoaded', loadFeaturedProjects);*/
 /////////////////////////////////////////////////////
 /*window.addEventListener('scroll', () => {
     const header_index = document.querySelector('.header-area');

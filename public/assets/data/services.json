@@ -11,7 +11,7 @@
       "Brand guidelines, tone of voice and storytelling",
       "Strategic positioning and market analysis"
     ],
-    "banner": "assets/imgs/roya-imgs/branding-plutus.jpg"
+    "video": "https://res.cloudinary.com/doizn3h1h/video/upload/v1759713619/VIDEO_1_WEBSITE22_gjmcv7.mp4"
   },
   {
     "id": "content-creation",
@@ -25,7 +25,7 @@
       "Motion graphics and animation",
       "Strategic content planning and calendar development"
     ],
-    "banner": "assets/imgs/roya-imgs/banner-content.jpeg"
+    "video": "https://res.cloudinary.com/doizn3h1h/video/upload/v1759712635/15439677-uhd_3840_2160_30fps_n2enk3.mp4"
   },
   {
     "id": "social-media",
@@ -39,7 +39,7 @@
       "Community engagement and customer support",
       "Data‑driven optimization and growth strategies"
     ],
-    "banner": "assets/imgs/roya-imgs/banner-social.png"
+    "video": "https://res.cloudinary.com/doizn3h1h/video/upload/v1759712578/8303104-hd_1920_1080_24fps_y87nso.mp4"
   },
   {
     "id": "advertising",
@@ -53,7 +53,7 @@
       "Performance tracking and strategy refinement",
       "Conversion optimization for maximum ROI"
     ],
-    "banner": "assets/imgs/roya-imgs/banner-advertising.png"
+    "video": "https://res.cloudinary.com/doizn3h1h/video/upload/v1759712576/18419658-hd_1920_1080_30fps_ajaqks.mp4"
   },
   {
     "id": "creative-campaigns",
@@ -67,7 +67,7 @@
       "Audience activation and engagement strategies",
       "Measurable outcomes to assess success"
     ],
-    "banner": "assets/imgs/roya-imgs/banner-creative.png"
+    "video": "https://res.cloudinary.com/doizn3h1h/video/upload/v1759712548/12920659-hd_1920_1080_30fps_xg9jpi.mp4"
   },
   {
     "id": "media-production",
@@ -81,7 +81,7 @@
       "Post‑production editing, color grading and sound design",
       "Creative direction and art direction for shoots"
     ],
-    "banner": "assets/imgs/roya-imgs/banner-media.jpg"
+    "video": ""
   },
   {
     "id": "print-outdoor",
@@ -95,7 +95,7 @@
       "High‑quality production management and installation",
       "Collateral design: brochures, roll‑ups, stands, packaging, etc."
     ],
-    "banner": "assets/imgs/roya-imgs/banner-print.png"
+    "video": "https://res.cloudinary.com/doizn3h1h/video/upload/v1760528435/gradient-background-2025-08-29-10-18-32-utc_qcdrnt.mp4"
   },
   {
     "id": "seo",
@@ -109,7 +109,7 @@
       "On‑page and off‑page SEO tactics",
       "Ongoing monitoring and performance reporting"
     ],
-    "banner": "assets/imgs/roya-imgs/banner-seo.jpg"
+    "video": ""
   },
   {
     "id": "measurement",
@@ -123,7 +123,7 @@
       "Campaign performance reporting",
       "Data‑driven recommendations for continuous improvement"
     ],
-    "banner": "assets/imgs/roya-imgs/banner-analytics.jpg"
+    "video": ""
   },
   {
     "id": "web-development",
@@ -137,6 +137,6 @@
       "E‑commerce solutions and interactive platforms",
       "Ongoing maintenance, performance optimization and security audits"
     ],
-    "banner": "assets/imgs/roya-imgs/banner-web.jpg"
+    "video": "https://res.cloudinary.com/doizn3h1h/video/upload/v1760527410/blue-particles-radiant-particle-burst-2025-08-29-10-56-44-utc_m0ne4f.mp4"
   }
 ]
