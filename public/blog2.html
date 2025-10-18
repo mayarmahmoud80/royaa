@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roya Preloader</title>
+  <style>
+    :root {
+      --main-color: #00f7ff;
+      --bg-color: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--bg-color);
+    }
+
+    /* شاشة التحميل */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--bg-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.6s ease;
+    }
+
+    #preloader.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* نص متحرك - ROYA */
+    .roya {
+      display: flex;
+      gap: 15px;
+    }
+
+    .roya span {
+      font-size: 64px;
+      font-weight: bold;
+      color: transparent;
+      opacity: 0;
+      animation: fadeInChar 0.8s forwards;
+      text-shadow: 0 0 8px var(--main-color), 0 0 20px var(--main-color);
+      -webkit-text-stroke: 1px var(--main-color);
+    }
+
+    .roya span:nth-child(1) { animation-delay: 0.2s; }
+    .roya span:nth-child(2) { animation-delay: 0.5s; }
+    .roya span:nth-child(3) { animation-delay: 0.8s; }
+    .roya span:nth-child(4) { animation-delay: 1.1s; }
+
+    @keyframes fadeInChar {
+      to {
+        opacity: 1;
+        color: var(--main-color);
+        transform: translateY(0);
+      }
+    }
+
+    /* نقطة تحميل نابضة */
+    .pulse {
+      margin-top: 30px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      animation: pulseAnim 1s infinite;
+    }
+
+    @keyframes pulseAnim {
+      0% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+      50% {
+        transform: scale(1.5);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+    }
+
+    /* محتوى الصفحة */
+    #content {
+      display: none;
+      color: #fff;
+      text-align: center;
+      padding: 60px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: var(--main-color);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شاشة التحميل -->
+  <div id="preloader">
+    <div class="roya">
+      <span>R</span>
+      <span>O</span>
+      <span>Y</span>
+      <span>A</span>
+    </div>
+    <div class="pulse"></div>
+  </div>
+
+  <!-- محتوى الموقع -->
+  <div id="content">
+    <h1>أهلاً بك في Roya 🌟</h1>
+    <p>موقعنا جاهز للعمل!</p>
+  </div>
+
+  <!-- إخفاء شاشة التحميل -->
+  <script>
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      const content = document.getElementById("content");
+
+      preloader.classList.add("hidden");
+
+      setTimeout(() => {
+        preloader.style.display = "none";
+        content.style.display = "block";
+      }, 700);
+    });
+  </script>
+
+</body>
+</html>

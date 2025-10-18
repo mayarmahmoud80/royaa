@@ -223,25 +223,25 @@ document.addEventListener("DOMContentLoaded", function () {
 const brands = [
   {
     bg: "assets/imgs/roya-imgs/project_img/z.png",
-    logo: "assets/imgs/roya-imgs/zee_brand_logo.png",
+    logo: "assets/imgs/roya-imgs/project_img/overlay/zee_brand_logo.png",
     altBg: "Z Brand",
     altLogo: "Z Logo"
   },
   {
     bg: "assets/imgs/roya-imgs/project_img/woven.png",
-    logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
+    logo: "assets/imgs/roya-imgs/project_img/overlay/woven_brand_logo.png",
     altBg: "Woven Brand",
     altLogo: "Woven Logo"
   },{
     bg: "assets/imgs/roya-imgs/project_img/zalila.png",
-    logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
+    logo: "assets/imgs/roya-imgs/project_img/overlay/zalila_brand_logo.png",
     altLogo: "Zalila Logo",
     altBg: "Zalia Brand",
     
   },
   {
     bg: "assets/imgs/roya-imgs/project_img/fiorella.png",
-    logo: "assets/imgs/roya-imgs/woven_brand_logo.png",
+    logo: "assets/imgs/roya-imgs/project_img/overlay/fiorella_brand_logp.png",
     altLogo: "Fiorella Logo",
     altBg: "Fiorella Brand",
   }
@@ -261,7 +261,7 @@ brands.forEach((brand, index) => {
   card.innerHTML = `
     <img class="bg" src="${brand.bg}" alt="${brand.altBg}" loading="lazy">
     <div class="overlay"></div>
-    <img class="logo" src="${brand.logo}" alt="${brand.altLogo}" loading="lazy">
+    <img class="logo" src="${brand.logo}" alt="${brand.altLogo}" height="100%" loading="lazy">
   `;
 
   brandRow.appendChild(card);

@@ -1,3 +1,7 @@
+$.get("assets/components/preloader.html", function(data) {
+    $('preloader').prepend(data);   
+});
+
 $.get("assets/components/head.html", function(data) {
     $('head').prepend(data);   
 });
