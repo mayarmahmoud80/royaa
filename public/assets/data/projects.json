@@ -71,12 +71,12 @@
     ],
     "banner": "assets/imgs/roya-imgs/sadaf/sdaf-banner_1.png",
     "gallery": [
-      "assets/imgs/roya-imgs/sadaf/sadaf-1.png",
-      "assets/imgs/roya-imgs/sadaf/sadaf-2.png",
-      "assets/imgs/roya-imgs/sadaf/sadaf-2.png",
-      "assets/imgs/roya-imgs/sadaf/sadaf_1.png",
-      "assets/imgs/roya-imgs/sadaf/sadaf_2.png",
-      "assets/imgs/roya-imgs/sadaf/sadaf_3.png"
+      "assets/imgs/roya-imgs/sadaf/Sadaf-1.png",
+      "assets/imgs/roya-imgs/sadaf/Sadaf-2.png",
+      "assets/imgs/roya-imgs/sadaf/Sadaf-3.png",
+      "assets/imgs/roya-imgs/sadaf/Sadaf_1.png",
+      "assets/imgs/roya-imgs/sadaf/Sadaf_2.png",
+      "assets/imgs/roya-imgs/sadaf/Sadaf_3.png"
     ],
     "banner2": "assets/imgs/roya-imgs/sadaf/sdaf-banner_2.png"
   },
@@ -172,7 +172,6 @@
     "category": "Branding",
     "year": "2025",
     "banner": "assets/imgs/roya-imgs/project_img/z.png"
-
   }, 
   {
     "id": "Fiorella-branding",
