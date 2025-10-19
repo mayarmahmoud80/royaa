@@ -9,8 +9,32 @@
 <body class="body-wrapper dark body-page-inner font-heading-sequelsans-romanbody"  style="padding-top: 80px;">
 
   <!-- Preloader -->
-     <preloader></preloader>
+<div id="preloader">
+    <div class="roya">
+      <span>R</span>
+      <span>O</span>
+      <span>Y</span>
+      <span>A</span>
+    </div>
+  </div>
 
+  
+ <script>
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+
+      preloader.classList.add("hidden");
+
+      setTimeout(() => {
+        preloader.style.display = "none";
+        document.body.classList.add("loaded");
+
+        // ✅ إعادة التمرير
+        document.body.style.overflow = "auto";
+        document.documentElement.style.overflow = "auto";
+      }, 700);
+    });
+  </script>
 <!-- <div id="preloader">
     <div id="container" class="container-preloader">
       <div class="animation-preloader">
@@ -259,7 +283,7 @@
   .hero-meta { max-width: calc(60%); }
   .eyebrow { display:inline-block; background: rgba(255,255,255,0.04); padding:6px 10px; border-radius: 8px; color:#ffdba3; font-weight:600; font-size:13px; margin-bottom:12px; }
   .hero-title { font-size:32px; line-height:1.15; margin:0 0 12px; font-weight:700; }
-  .text-gradient { background: linear-gradient(90deg,#f9e29a,#f6b84a); -webkit-text-fill-color: transparent; }
+  .text-gradient { background: linear-gradient(90deg,#f9e29a,#f6b84a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .meta-row { color:#cfcfcf; font-size:14px; display:flex; gap:8px; align-items:center; }
   .meta-row .dot { opacity:0.6; margin:0 6px; }
 
