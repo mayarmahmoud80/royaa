@@ -261,7 +261,7 @@ brands.forEach((brand, index) => {
   card.innerHTML = `
     <img class="bg" src="${brand.bg}" alt="${brand.altBg}" loading="lazy">
     <div class="overlay"></div>
-    <img class="logo" src="${brand.logo}" alt="${brand.altLogo}" height="100%" loading="lazy">
+    <img class="logo" src="${brand.logo}" alt="${brand.altLogo}" style="height:auto!important;" loading="lazy">
   `;
 
   brandRow.appendChild(card);
