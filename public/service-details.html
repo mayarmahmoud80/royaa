@@ -93,7 +93,9 @@
                   </div>
                 </div>
                 <div class="section-thumb parallax-view">
-                  <img id="service-banner" src="assets/imgs/gallery/image-24.webp" alt="Service Banner" data-speed="0.8">
+                  <video id="service-banner" autoplay muted loop playsinline style=" width: 100%; height: 100%; object-fit: cover; z-index: 1; pointer-events: none;">
+              <source src="https://res.cloudinary.com/doizn3h1h/video/upload/v1759713619/VIDEO_1_WEBSITE22_gjmcv7.mp4" type="video/mp4">
+            </video>
                 </div>
               </div>
             </div>
@@ -441,7 +443,7 @@
           document.getElementById('service-tag').textContent = `[${service.title}]`;
           document.getElementById('service-title').innerHTML = service.title.replace(' ', ' <br>');
           document.getElementById('service-description').textContent = service.short;
-          document.getElementById('service-banner').src = service.banner;
+          document.getElementById('service-banner').src = service.video;
           document.getElementById('service-banner').alt = service.title;
           
           // Update features list
