@@ -225,25 +225,29 @@ const brands = [
     bg: "assets/imgs/roya-imgs/project_img/z.png",
     logo: "assets/imgs/roya-imgs/project_img/overlay/zee_brand_logo.png",
     altBg: "Z Brand",
-    altLogo: "Z Logo"
+    altLogo: "Z Logo",
+    href: "portfolio-details.html?id=z-branding"
   },
   {
     bg: "assets/imgs/roya-imgs/project_img/woven.png",
     logo: "assets/imgs/roya-imgs/project_img/overlay/woven_brand_logo.png",
     altBg: "Woven Brand",
-    altLogo: "Woven Logo"
-  },{
+    altLogo: "Woven Logo",
+    href: "portfolio-details.html?id=woven"
+  },
+  {
     bg: "assets/imgs/roya-imgs/project_img/zalila.png",
     logo: "assets/imgs/roya-imgs/project_img/overlay/zalila_brand_logo.png",
     altLogo: "Zalila Logo",
     altBg: "Zalia Brand",
-    
+    href: "portfolio-details.html?id=zalila-branding"
   },
   {
     bg: "assets/imgs/roya-imgs/project_img/fiorella.png",
     logo: "assets/imgs/roya-imgs/project_img/overlay/fiorella_brand_logp.png",
     altLogo: "Fiorella Logo",
     altBg: "Fiorella Brand",
+    href: "portfolio-details.html?id=Fiorella-branding"
   }
 ];
 
@@ -259,10 +263,12 @@ brands.forEach((brand, index) => {
   card.setAttribute("data-aos-easing", "ease-out-cubic");
 
   card.innerHTML = `
+  <a href="${brand.href}">
     <img class="bg" src="${brand.bg}" alt="${brand.altBg}" loading="lazy">
     <div class="overlay"></div>
     <img class="logo" src="${brand.logo}" alt="${brand.altLogo}" style="height:auto!important;" loading="lazy">
-  `;
+  </a>
+    `;
 
   brandRow.appendChild(card);
 });

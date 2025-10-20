@@ -165,20 +165,62 @@
     "banner2": "assets/imgs/roya-imgs/woven/woven-banner2.png"
 
   },
-   {
-    "id": "Z-branding",
+  {
+     "id": "Z-branding",
     "slug": "Z-branding-2025",
     "title": "Z Branding",
     "category": "Branding",
     "year": "2025",
-    "banner": "assets/imgs/roya-imgs/project_img/z.png"
-  }, 
+    "summary": "Brand identity design and art direction for a creative agency looking to refresh their image.",
+    "overview": "Atqen needed a brand refresh that would better represent their creative capabilities and attract new clients.",
+    "overview2":"We developed a bold, contemporary identity that showcases their artistic vision while maintaining commercial appeal.", 
+    "overview3": "The new brand has helped them win several high-profile clients and establish themselves as a leading creative agency in their market.",
+    "deliverables": [
+      "Brand refresh and identity design",
+      "Art direction for portfolio",
+      "Client presentation materials",
+      "Agency brand guidelines"
+    ],
+    "banner": "assets/imgs/roya-imgs/project_img/z.png",
+    
+    "gallery": [
+      "assets/imgs/roya-imgs/z/z_1.png",
+      "assets/imgs/roya-imgs/z/7.png",
+      "assets/imgs/roya-imgs/z/z_banner_2.png",
+      "assets/imgs/roya-imgs/z/5.png",
+      "assets/imgs/roya-imgs/z/6.png",
+      "assets/imgs/roya-imgs/z/7.png"
+    ],
+
+    "banner2": ""
+
+  },
   {
-    "id": "Fiorella-branding",
+     "id": "Fiorella-branding",
     "slug": "Fiorella-branding-2025",
     "title": "Fiorella Branding",
     "category": "Branding",
     "year": "2025",
-    "banner": "assets/imgs/roya-imgs/project_img/fiorella.png"
+    "summary": "Brand identity design and art direction for a creative agency looking to refresh their image.",
+    "overview": "Atqen needed a brand refresh that would better represent their creative capabilities and attract new clients.",
+    "overview2":"We developed a bold, contemporary identity that showcases their artistic vision while maintaining commercial appeal.", 
+    "overview3": "The new brand has helped them win several high-profile clients and establish themselves as a leading creative agency in their market.",
+    "deliverables": [
+      "Brand refresh and identity design",
+      "Art direction for portfolio",
+      "Client presentation materials",
+      "Agency brand guidelines"
+    ],
+    "banner": "assets/imgs/roya-imgs/project_img/fiorella.png",
+    
+    "gallery": [
+      "assets/imgs/roya-imgs/fiorella/fiorella_1.png",
+      "assets/imgs/roya-imgs/fiorella/4.png",
+      "assets/imgs/roya-imgs/fiorella/fiorella_banner_2.png",
+      "assets/imgs/roya-imgs/fiorella/1.png",
+      "assets/imgs/roya-imgs/fiorella/2.png",
+      "assets/imgs/roya-imgs/fiorella/3.png"
+    ],
+    "banner2": ""
   }
 ]

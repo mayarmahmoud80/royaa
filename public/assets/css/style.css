@@ -30125,7 +30125,8 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
 }
 
 .team-section .team-grid img {
-  width: 100%;
+  width: auto;
+      /*width: 100%;*/
   border-top-right-radius: 80%;
   border-bottom-left-radius: 100%;
   transition: all 0.4s ease;
@@ -30163,7 +30164,7 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
 /******************project_section***********************/
 
 /**************Preloader***************/
- html, body {
+/* html, body {
       margin: 0;
       padding: 0;
       overflow: hidden; 
@@ -30239,10 +30240,8 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
 body.loaded aside,
 body.loaded video {
   display: block;
-  animation: pageEnter 0.8s ease-out both;
 }
 
-/* ✅ تعريف الأنيميشن */
 @keyframes pageEnter {
   from {
     opacity: 0;
@@ -30252,7 +30251,7 @@ body.loaded video {
     opacity: 1;
     transform: translateY(0);
   }
-}
+}*/
 /**************************************/
 
 /*# sourceMappingURL=style.css.map */
