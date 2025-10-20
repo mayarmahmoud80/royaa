@@ -189,10 +189,10 @@
       "assets/imgs/roya-imgs/z/z_banner_2.png",
       "assets/imgs/roya-imgs/z/5.png",
       "assets/imgs/roya-imgs/z/6.png",
-      "assets/imgs/roya-imgs/z/7.png"
+      "assets/imgs/roya-imgs/z/8.png"
     ],
 
-    "banner2": ""
+    "banner2": "assets/imgs/roya-imgs/z/z_banner_3.png"
 
   },
   {
@@ -221,6 +221,8 @@
       "assets/imgs/roya-imgs/fiorella/2.png",
       "assets/imgs/roya-imgs/fiorella/3.png"
     ],
-    "banner2": ""
+
+    "banner2": "assets/imgs/roya-imgs/fiorella/fiorella_banner_3.png"
+
   }
 ]

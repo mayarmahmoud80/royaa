@@ -226,7 +226,7 @@ const brands = [
     logo: "assets/imgs/roya-imgs/project_img/overlay/zee_brand_logo.png",
     altBg: "Z Brand",
     altLogo: "Z Logo",
-    href: "portfolio-details.html?id=z-branding"
+    href: "portfolio-details.html?id=Z-branding"
   },
   {
     bg: "assets/imgs/roya-imgs/project_img/woven.png",
