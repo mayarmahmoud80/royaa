@@ -266,7 +266,7 @@ brands.forEach((brand, index) => {
   <a href="${brand.href}">
     <img class="bg" src="${brand.bg}" alt="${brand.altBg}" loading="lazy">
     <div class="overlay"></div>
-    <img class="logo" src="${brand.logo}" alt="${brand.altLogo}" style="height:auto!important;" loading="lazy">
+    <img class="logo" src="${brand.logo}" alt="${brand.altLogo}" loading="lazy">
   </a>
     `;
 
@@ -277,7 +277,7 @@ AOS.refresh();
 
 
 /*************teamGrid*************************** */
-
+/*
 const teamGrid = document.getElementById('teamGrid');
 const teamSection = document.querySelector('.team-section');
 
@@ -286,10 +286,8 @@ const teamMembers = [
 
   { name: "Amr", job: "", img: "assets/imgs//roya-imgs/person_image/amr.png" },
   { name: "Islam", job: "", img: "assets/imgs//roya-imgs/person_image/islam.jpg" },
-  { name: "Mohamed", job: "", img: "assets/imgs//roya-imgs/person_image/mr_mohamed.jpg" },
-  { name: "Omar", job: "", img: "assets/imgs//roya-imgs/person_image/omar.jpg" },
-  { name: "Hayam", job: "", img: "assets/imgs//roya-imgs/person_image/hayam.jpg" }
-/*
+  { name: "Mohamed", job: "", img: "assets/imgs//roya-imgs/person_image/mr_mohamed.jpg" }
+
   { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
   { name: "enjy", job: "", img: "assets/imgs//roya-imgs/person_image/enjy.jpg" },
   { name: "Gana", job: "", img: "assets/imgs//roya-imgs/person_image/gana.png" },
@@ -307,7 +305,7 @@ const teamMembers = [
   { name: "Nour", job: "", img: "assets/imgs//roya-imgs/person_image/Nour.jpg" },
   { name: "omar", job: "", img: "assets/imgs//roya-imgs/person_image/omar.jpg" },
   { name: "omnia", job: "", img: "assets/imgs//roya-imgs/person_image/omnia.jpg" },
-  { name: "sama", job: "", img: "assets/imgs//roya-imgs/person_image/sama.jpg" }*/
+  { name: "sama", job: "", img: "assets/imgs//roya-imgs/person_image/sama.jpg" }
 ];
 
 teamMembers.forEach((member, index) => {
@@ -367,5 +365,5 @@ teamGrid.addEventListener('mousemove', (e) => {
   const x = e.pageX - teamGrid.offsetLeft;
   const walk = (x - startX) * 2;
   teamGrid.scrollLeft = scrollLeft - walk;
-});
+});*/
 

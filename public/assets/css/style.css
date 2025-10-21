@@ -4959,12 +4959,16 @@ video.video-area {
 
 .services-wrapper-1 .service-box .service-list {
     margin-top: 22px;
+    background-color:#00000066 ;
 }
 
 .services-wrapper-1 .service-box .service-list li {
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 33px;
+    /*font-size: 18px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 30px;*/
     color: var(--primary);
 }
 
@@ -29281,7 +29285,7 @@ START: Footer CSS
     bottom: 100px !important;
   }
   .video_index{
-    bottom: 80px!important;
+    bottom: 60px!important;
   }
   .video_index .all-btn-wrapper {
     bottom: 80px!important;
