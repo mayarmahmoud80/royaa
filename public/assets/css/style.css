@@ -19646,8 +19646,13 @@ only screen and (max-width: 1919px) {
     .header-area-2 .header__button {
         display: none;
     }
+    
 }
-
+@media (max-width: 1200px) {
+    .header-area-2 .header__nav{
+        display: none;
+    } 
+}
 .header-area-2 .rr-btn {
     padding: 16px 28px;
     font-size: 16px;
@@ -29913,7 +29918,8 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
   opacity: 0;
   transition: all 0.6s ease;
   width: auto;
-  height: 160px;
+  /*height: 160px;*/
+  height: auto;
   filter: drop-shadow(0 6px 12px rgba(0,0,0,0.5));
   z-index: 2;
   pointer-events: none;
@@ -30164,7 +30170,17 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
   transform: translateY(0) scale(1);
   filter: drop-shadow(0 4px 10px #ffffff40);
 }
-
+/************************************************/
+@media only screen and (max-width : 1023px){
+    #section_1{display: block!important;}
+    #section_2{display: none!important;}
+}
+@media only screen and (min-width : 1024px) {
+    #section_1{display:none!important;}
+    #section_2{display:block;}
+}
+.team-area .content {display: flex; flex-direction: column; align-items: center;}
+.team-area span {color: #ffffffb8;}
 /******************project_section***********************/
 
 /**************Preloader***************/

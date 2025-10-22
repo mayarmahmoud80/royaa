@@ -163,19 +163,19 @@
               </div>
               <div class="counter-wrapper-box fade-anim">
                 <div class="counter-wrapper">
-                  <div class="funfact-item">
+                  <div class="funfact-item" data-aos="fade-up" data-aos-delay="100">
                     <p class="text">Satisfied clients</p>
-                    <h3 class="number t-counter">200+</h3>
+                    <h3 class="number t-counter counter" data-target="200">+0</h3>
                   </div>
-                  <div class="funfact-item">
+                  <div class="funfact-item" data-aos="fade-up" data-aos-delay="100">
                     <p class="text">Projects completed</p>
-                    <h3 class="number t-counter">200+</h3>
+                    <h3 class="number t-counter counter" data-target="200">0+</h3>
                   </div>
-                  <div class="funfact-item">
+                  <div class="funfact-item" data-aos="fade-up" data-aos-delay="100">
                     <p class="text">Years of experience</p>
-                    <h3 class="number t-counter">12+</h3>
+                    <h3 class="number t-counter counter" data-target="12">0+</h3>
                   </div>
-                  <div class="funfact-item">
+                  <div class="funfact-item" data-aos="fade-up" data-aos-delay="100">
                     <p class="text">Client satisfaction</p>
                     <h3 class="number t-counter">95%</h3>
                   </div>
@@ -438,7 +438,39 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script>
+<!-- Counter Animation -->
+<script>
+  const counters = document.querySelectorAll('.counter');
+
+  const startCounter = (entry) => {
+    const counter = entry.target;
+    const target = +counter.getAttribute('data-target');
+    let count = 0;
+    const increment = target / 100;
+
+    const update = () => {
+      count += increment;
+      if (count < target) {
+        counter.innerText = `${Math.floor(count)}+`;
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = `${target}+`;
+      }
+    };
+    update();
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounter(entry);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 1.0 });
+
+  counters.forEach(counter => observer.observe(counter));
+
   AOS.init();
 </script>
 

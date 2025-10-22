@@ -23,8 +23,8 @@ if(element){
 
  
 const services = [
-  { title:"Branding", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712576/18419658-hd_1920_1080_30fps_ajaqks.mp4", list:["UI UX Consulting","UX Research","Usability Testing","Wireframing","Prototyping"]},
-  { title:"UI-UX Design", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712548/12920659-hd_1920_1080_30fps_xg9jpi.mp4", list:["Creative Direction","Brand Identity","Branding Strategy","Graphic Design","Startup"]},
+  { title:"Branding", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712576/18419658-hd_1920_1080_30fps_ajaqks.mp4",  list:["Creative Direction","Brand Identity","Branding Strategy","Graphic Design","Startup"]},
+  { title:"UI-UX Design", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712548/12920659-hd_1920_1080_30fps_xg9jpi.mp4",list:["UI UX Consulting","UX Research","Usability Testing","Wireframing","Prototyping"]},
   { title:"Development", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759712578/8303104-hd_1920_1080_24fps_y87nso.mp4", list:["WordPress","Webflow","Laravel Framework","React & Flutter","Design System"]},
   { title:"Digital Marketing", video:"https://res.cloudinary.com/doizn3h1h/video/upload/v1759713619/VIDEO_1_WEBSITE22_gjmcv7.mp4", list:["Online Marketing","SEO-Marketing","Strategy","Market Research","Social Reform"]}
 ];
@@ -243,7 +243,7 @@ const brands = [
     href: "portfolio-details.html?id=zalila-branding"
   },
   {
-    bg: "assets/imgs/roya-imgs/project_img/fiorella.png",
+    bg: "assets/imgs/roya-imgs/project_img/1.png",
     logo: "assets/imgs/roya-imgs/project_img/overlay/fiorella_brand_logp.png",
     altLogo: "Fiorella Logo",
     altBg: "Fiorella Brand",
@@ -277,7 +277,7 @@ AOS.refresh();
 
 
 /*************teamGrid*************************** */
-/*
+
 const teamGrid = document.getElementById('teamGrid');
 const teamSection = document.querySelector('.team-section');
 
@@ -288,7 +288,7 @@ const teamMembers = [
   { name: "Islam", job: "", img: "assets/imgs//roya-imgs/person_image/islam.jpg" },
   { name: "Mohamed", job: "", img: "assets/imgs//roya-imgs/person_image/mr_mohamed.jpg" }
 
-  { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
+/*  { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
   { name: "enjy", job: "", img: "assets/imgs//roya-imgs/person_image/enjy.jpg" },
   { name: "Gana", job: "", img: "assets/imgs//roya-imgs/person_image/gana.png" },
   { name: "Hayam", job: "", img: "assets/imgs//roya-imgs/person_image/hayam.jpg" },
@@ -305,7 +305,7 @@ const teamMembers = [
   { name: "Nour", job: "", img: "assets/imgs//roya-imgs/person_image/Nour.jpg" },
   { name: "omar", job: "", img: "assets/imgs//roya-imgs/person_image/omar.jpg" },
   { name: "omnia", job: "", img: "assets/imgs//roya-imgs/person_image/omnia.jpg" },
-  { name: "sama", job: "", img: "assets/imgs//roya-imgs/person_image/sama.jpg" }
+  { name: "sama", job: "", img: "assets/imgs//roya-imgs/person_image/sama.jpg" }*/
 ];
 
 teamMembers.forEach((member, index) => {
@@ -365,5 +365,5 @@ teamGrid.addEventListener('mousemove', (e) => {
   const x = e.pageX - teamGrid.offsetLeft;
   const walk = (x - startX) * 2;
   teamGrid.scrollLeft = scrollLeft - walk;
-});*/
+});
 

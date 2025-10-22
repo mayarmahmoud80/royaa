@@ -2,8 +2,7 @@
   {
     "id": "zalila-branding",
     "slug": "zalila-branding-2024",
-    "title": "Zalila Branding",
-    "category": "Branding",
+    "title": "Zalila",
     "year": "2024",
     "summary": "Complete brand identity design for a unique fashion brand that needed a distinctive identity to stand out in a crowded market.",
     "overview": "Zalila is a unique fashion brand that needed a distinctive identity to stand out in a crowded market and communicate its values effectively.", 
@@ -29,8 +28,7 @@
   {
     "id": "nughayer-branding",
     "slug": "nughayer-branding-2025",
-    "title": "Nughayer Branding",
-    "category": "Branding",
+    "title": "Nughayer",
     "year": "2025",
     "summary": "Art direction and identity design for a forward-thinking brand looking to establish a strong market presence.",
     "overview": "Nughayer approached us with a vision to create a brand that would resonate with modern consumers while maintaining cultural authenticity.",
@@ -56,8 +54,7 @@
   {
     "id": "sadaf-branding",
     "slug": "sadaf-branding-2025",
-    "title": "Sadaf Branding",
-    "category": "Branding",
+    "title": "Sadaf",
     "year": "2025",
     "summary": "Holistic identity experience that embodies values and vision for a premium lifestyle brand.",
     "overview": "Sadaf required a comprehensive brand identity that would reflect their premium positioning and sophisticated target audience. ",
@@ -83,8 +80,7 @@
   {
     "id": "alhijaz-power",
     "slug": "alhijaz-power-branding-2025",
-    "title": "Alhijaz Power Branding",
-    "category": "Branding",
+    "title": "Alhijaz Power",
     "year": "2025",
     "summary": "Comprehensive rebrand connecting essence and aesthetics for a power solutions company.",
     "overview": "Alhijaz Power needed a complete brand transformation to better reflect their innovative approach to power solutions and their commitment to sustainability. We conducted stakeholder interviews and market analysis to understand their unique positioning.",
@@ -111,8 +107,7 @@
   {
     "id": "atqen-branding",
     "slug": "atqen-branding-2025",
-    "title": "Atqen Branding",
-    "category": "Branding",
+    "title": "Atqen",
     "year": "2025",
     "summary": "Brand identity design and art direction for a creative agency looking to refresh their image.",
     "overview": "Atqen needed a brand refresh that would better represent their creative capabilities and attract new clients.",
@@ -141,7 +136,6 @@
     "id": "woven",
     "slug": "woven-2024",
     "title": "Woven",
-    "category": "Web",
     "year": "2024",
     "summary": "Complete digital transformation including brand identity, social media management, and website design.",
     "overview": "Woven needed a complete digital transformation to modernize their brand and improve their online presence.",
@@ -168,8 +162,7 @@
   {
      "id": "Z-branding",
     "slug": "Z-branding-2025",
-    "title": "Z Branding",
-    "category": "Branding",
+    "title": "ZBrand",
     "year": "2025",
     "summary": "Brand identity design and art direction for a creative agency looking to refresh their image.",
     "overview": "Atqen needed a brand refresh that would better represent their creative capabilities and attract new clients.",
@@ -181,7 +174,7 @@
       "Client presentation materials",
       "Agency brand guidelines"
     ],
-    "banner": "assets/imgs/roya-imgs/project_img/z.png",
+    "banner": "assets/imgs/roya-imgs/z/z_banner.png",
     
     "gallery": [
       "assets/imgs/roya-imgs/z/z_1.png",
@@ -198,8 +191,7 @@
   {
      "id": "Fiorella-branding",
     "slug": "Fiorella-branding-2025",
-    "title": "Fiorella Branding",
-    "category": "Branding",
+    "title": "Fiorella",
     "year": "2025",
     "summary": "Brand identity design and art direction for a creative agency looking to refresh their image.",
     "overview": "Atqen needed a brand refresh that would better represent their creative capabilities and attract new clients.",
@@ -211,10 +203,10 @@
       "Client presentation materials",
       "Agency brand guidelines"
     ],
-    "banner": "assets/imgs/roya-imgs/project_img/fiorella.png",
+    "banner": "assets/imgs/roya-imgs/fiorella/fiorella_1.png",
     
     "gallery": [
-      "assets/imgs/roya-imgs/fiorella/fiorella_1.png",
+      "assets/imgs/roya-imgs/project_img/fiorella.png",
       "assets/imgs/roya-imgs/fiorella/4.png",
       "assets/imgs/roya-imgs/fiorella/fiorella_banner_2.png",
       "assets/imgs/roya-imgs/fiorella/1.png",
