@@ -29951,7 +29951,8 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
     height: 40vh;
   }
   .card__2 .logo {
-    height: 100px;
+    /*height: 100px;*/
+    height: auto;
   }
 }
 
