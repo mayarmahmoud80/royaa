@@ -29943,6 +29943,8 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
     height: 50vh;
   }
   .card__2 .logo {
+    width: 194px;
+    height: auto;
     height: 120px;
   }
 }
