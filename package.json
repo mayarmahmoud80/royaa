@@ -1,0 +1,13 @@
+{
+  "name": "roya-profile-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "firebase deploy --only hosting:roya-playhaus-website",
+    "deploy:prod": "firebase deploy --only hosting:roya-profile-website-prod"
+  },
+  "author": "",
+  "license": "ISC"
+}
