@@ -284,9 +284,10 @@ const teamSection = document.querySelector('.team-section');
 const teamMembers = [
 
 
-  { name: "Amr", job: "", img: "assets/imgs//roya-imgs/person_image/amr.png" },
-  { name: "Islam", job: "", img: "assets/imgs//roya-imgs/person_image/islam.jpg" },
-  { name: "Mohamed", job: "", img: "assets/imgs//roya-imgs/person_image/mr_mohamed.jpg" }
+  { name: "Majed Alsirafy", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Majed.jpg" },
+  { name: "Fahad Al-Sahli", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Fahad.jpg" },
+  { name: "Ahmed Al-Sahhar", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Ahmed_co.jpg" },
+  { name: "Mohamed Abdo", job: "CEO", img: "assets/imgs//roya-imgs/person_image/Mohamed.jpg" },
 
 /*  { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
   { name: "enjy", job: "", img: "assets/imgs//roya-imgs/person_image/enjy.jpg" },
