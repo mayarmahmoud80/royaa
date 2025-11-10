@@ -222,6 +222,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const brands = [
   {
+    bg: "assets/imgs/roya-imgs/project_img/al_majed.png",
+    logo: "assets/imgs/roya-imgs/project_img/overlay/majed_brand_log.png",
+    altLogo: "al_majed Logo",
+    altBg: "al_majed Brand",
+    href: "portfolio-details.html?id"
+  },
+  {
     bg: "assets/imgs/roya-imgs/project_img/z.png",
     logo: "assets/imgs/roya-imgs/project_img/overlay/zee_brand_logo.png",
     altBg: "Z Brand",
@@ -249,6 +256,7 @@ const brands = [
     altBg: "Fiorella Brand",
     href: "portfolio-details.html?id=Fiorella-branding"
   }
+  
 ];
 
 const brandRow = document.getElementById("brand-row");
@@ -283,11 +291,10 @@ const teamSection = document.querySelector('.team-section');
 
 const teamMembers = [
 
-
-  { name: "Majed Alsirafy", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Majed.jpg" },
   { name: "Fahad Al-Sahli", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Fahad.jpg" },
+  { name: "Majed Alsirafy", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Majed.jpg" },
   { name: "Ahmed Al-Sahhar", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Ahmed_co.jpg" },
-  { name: "Mohamed Abdo", job: "CEO", img: "assets/imgs//roya-imgs/person_image/Mohamed.jpg" },
+  { name: "Mohamed Abdo", job: "Co-Founder & CFO", img: "assets/imgs//roya-imgs/person_image/Mohamed.jpg" },
 
 /*  { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
   { name: "enjy", job: "", img: "assets/imgs//roya-imgs/person_image/enjy.jpg" },
