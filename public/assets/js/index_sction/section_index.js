@@ -291,10 +291,10 @@ const teamSection = document.querySelector('.team-section');
 
 const teamMembers = [
 
-  { name: "Fahad Al-Sahli", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Fahad.jpg" },
-  { name: "Majed Alsirafy", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Majed.jpg" },
-  { name: "Ahmed Al-Sahhar", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Ahmed_co.jpg" },
-  { name: "Mohamed Abdo", job: "Co-Founder & CFO", img: "assets/imgs//roya-imgs/person_image/Mohamed.jpg" },
+  { name: "Fahad Al-Sahli", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Fahad.png" },
+  { name: "Majed Alsirafy", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Majed.png" },
+  { name: "Ahmed Al-Sahhar", job: "Co-Founder & Managing Partner", img: "assets/imgs/roya-imgs/person_image/Ahmed_co.png" },
+  { name: "Mohamed Abdo", job: "Co-Founder & CFO", img: "assets/imgs//roya-imgs/person_image/Mohamed.png" },
 
 /*  { name: "eissa", job: "", img: "assets/imgs//roya-imgs/person_image/eissa.jpg" },
   { name: "enjy", job: "", img: "assets/imgs//roya-imgs/person_image/enjy.jpg" },
