@@ -226,7 +226,7 @@ const brands = [
     logo: "assets/imgs/roya-imgs/project_img/overlay/majed_brand_log.png",
     altLogo: "al_majed Logo",
     altBg: "al_majed Brand",
-    href: "portfolio-details.html?id"
+    href: "portfolio-details.html?id=al-majedOud-branding"
   },
   {
     bg: "assets/imgs/roya-imgs/project_img/z.png",

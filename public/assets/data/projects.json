@@ -219,5 +219,36 @@
 
     "banner2": "assets/imgs/roya-imgs/fiorella/fiorella_banner_3.png"
 
+  },
+   {
+     "id": "al-majedOud-branding",
+    "slug": "al-majed oud-branding-2025",
+    "title": "al-majed oud",
+    "year": "2025",
+    "summary": "al-majed oud  A Fragrant Story of Elegance and Emotion.",
+    "overview": "At Roya, we partnered with al-majed oud, a luxury perfume brand that embodies Elegance and emotional connection. Our mission was to translate that essence into a full digital presence  from strategy and design to campaigns and performance marketing, creating an experience that not only looks beautiful but also sells beautifully.",
+    "overview2": "",
+    "overview3": "",
+    "deliverables": [
+      "Social media calendar",
+      "Social media campaigns",
+      "Performance marketing",
+      "Website",
+      "Photo shoot",
+      "3D videos"
+    ],
+    "banner": "assets/imgs/roya-imgs/project_img/al_majed.png",
+    
+    "gallery": [
+      "assets/imgs/roya-imgs/al-majed/al_majed_img_1.png",
+      "assets/imgs/roya-imgs/al-majed/4.png",
+      "assets/imgs/roya-imgs/al-majed/al_majed_banner_2.png",
+      "assets/imgs/roya-imgs/al-majed/1.png",
+      "assets/imgs/roya-imgs/al-majed/2.png",
+      "assets/imgs/roya-imgs/al-majed/3.png"
+    ],
+
+    "banner2": "assets/imgs/roya-imgs/al-majed/al_majed_bannnee_3.png"
+
   }
 ]
