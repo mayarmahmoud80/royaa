@@ -42,14 +42,14 @@
     ],
     "banner": "assets/imgs/roya-imgs/noghayer/Future_banner_1.png",
     "gallery": [
-      "assets/imgs/roya-imgs/noghayer/noghayer-2.png",
-      "assets/imgs/roya-imgs/noghayer/noghayer-1.png",
-      "assets/imgs/roya-imgs/noghayer/noghayer-3.png",
-      "assets/imgs/roya-imgs/noghayer/noghayer_1.png",
-      "assets/imgs/roya-imgs/noghayer/noghayer_2.png",
-      "assets/imgs/roya-imgs/noghayer/noghayer_3.png"
+      "assets/imgs/roya-imgs/noghayer/noghayer-2.jpg",
+      "assets/imgs/roya-imgs/noghayer/noghayer-1.jpg",
+      "assets/imgs/roya-imgs/noghayer/noghayer-3.jpg",
+      "assets/imgs/roya-imgs/noghayer/noghayer_1.jpg",
+      "assets/imgs/roya-imgs/noghayer/noghayer_2.jpg",
+      "assets/imgs/roya-imgs/noghayer/noghayer_3.jpg"
     ],
-    "banner2": "assets/imgs/roya-imgs/noghayer/Future_banner_2.png"
+    "banner2": "assets/imgs/roya-imgs/noghayer/Future_banner_2.jpg"
   },
   {
     "id": "sadaf-branding",
@@ -94,14 +94,14 @@
     ],
     "banner": "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-banner.jpg",
     "gallery": [
-      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-1.png",
-      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-2.png",
-      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-3.png",
-      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_1.png",
-      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_2.png",
-      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_3.png"
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-1.jpg",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-2.jpg",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-3.jpg",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_1.jpg",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_2.jpg",
+      "assets/imgs/roya-imgs/alhejaz/Al-Hejaz_3.jpg"
     ],
-    "banner2": "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-banner_1.png"
+    "banner2": "assets/imgs/roya-imgs/alhejaz/Al-Hejaz-banner_1.jpg"
 
   },
   {
@@ -178,12 +178,12 @@
     "banner": "assets/imgs/roya-imgs/z/z_banner.png",
     
     "gallery": [
-      "assets/imgs/roya-imgs/z/z_1.png",
-      "assets/imgs/roya-imgs/z/7.png",
-      "assets/imgs/roya-imgs/z/z_banner_2.png",
-      "assets/imgs/roya-imgs/z/5.png",
-      "assets/imgs/roya-imgs/z/6.png",
-      "assets/imgs/roya-imgs/z/8.png"
+      "assets/imgs/roya-imgs/z/z_1.jpg",
+      "assets/imgs/roya-imgs/z/7.jpg",
+      "assets/imgs/roya-imgs/z/z_banner_2.jpg",
+      "assets/imgs/roya-imgs/z/5.jpg",
+      "assets/imgs/roya-imgs/z/6.jpg",
+      "assets/imgs/roya-imgs/z/8.jpg"
     ],
 
     "banner2": "assets/imgs/roya-imgs/z/z_banner_3.png"
@@ -209,12 +209,12 @@
     "banner": "assets/imgs/roya-imgs/fiorella/fiorella_1.png",
     
     "gallery": [
-      "assets/imgs/roya-imgs/project_img/fiorella.png",
-      "assets/imgs/roya-imgs/fiorella/4.png",
-      "assets/imgs/roya-imgs/fiorella/fiorella_banner_2.png",
-      "assets/imgs/roya-imgs/fiorella/1.png",
-      "assets/imgs/roya-imgs/fiorella/2.png",
-      "assets/imgs/roya-imgs/fiorella/3.png"
+      "assets/imgs/roya-imgs/project_img/fiorella.jpg",
+      "assets/imgs/roya-imgs/fiorella/4.jpg",
+      "assets/imgs/roya-imgs/fiorella/fiorella_banner_2.jpg",
+      "assets/imgs/roya-imgs/fiorella/1.jpg",
+      "assets/imgs/roya-imgs/fiorella/2.jpg",
+      "assets/imgs/roya-imgs/fiorella/3.jpg"
     ],
 
     "banner2": "assets/imgs/roya-imgs/fiorella/fiorella_banner_3.png"
