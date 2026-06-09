@@ -30169,7 +30169,9 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
   transform: translateY(50px) scale(0.9);
   transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
-
+.team-area-team-page .team-info img{
+          object-fit: cover!important;
+        }
 .team-card.animate {
   opacity: 1;
   transform: translateY(0) scale(1);
@@ -30186,6 +30188,8 @@ filter: drop-shadow(0 4px 10px #ffffffbb);
 }
 .team-area .content {display: flex; flex-direction: column; align-items: center;}
 .team-area span {color: #ffffffb8;}
+
+
 /******************project_section***********************/
 
 /**************Preloader***************/

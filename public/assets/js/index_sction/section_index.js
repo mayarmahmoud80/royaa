@@ -23,10 +23,10 @@ if(element){
 
  
 const services = [
-  { title:"Branding", video:"https://res.cloudinary.com/dampwi1tt/video/upload/v1763892154/VIDEO_1_WEBSITE22_evjkj7.mp4",  list:["Creative Direction","Brand Identity","Branding Strategy","Graphic Design","Startup"]},
-  { title:"UI-UX Design", video:"https://res.cloudinary.com/dampwi1tt/video/upload/v1763892052/12920659-hd_1920_1080_30fps_ngo96z.mp4",list:["UI UX Consulting","UX Research","Usability Testing","Wireframing","Prototyping"]},
-  { title:"Development", video:"https://res.cloudinary.com/dampwi1tt/video/upload/v1763892035/8303104-hd_1920_1080_24fps_gz95pv.mp4", list:["WordPress","Webflow","Laravel Framework","React & Flutter","Design System"]},
-  { title:"Digital Marketing", video:"https://res.cloudinary.com/dampwi1tt/video/upload/v1763891995/18419658-hd_1920_1080_30fps_arus6m.mp4", list:["Online Marketing","SEO-Marketing","Strategy","Market Research","Social Reform"]}
+  { title:"Branding", video:"https://pub-285dcb2c7e9f497fa9389ab226d24e14.r2.dev/video/Services_1.mp4",  list:["Creative Direction","Brand Identity","Branding Strategy","Graphic Design","Startup"]},
+  { title:"UI-UX Design", video:"https://pub-285dcb2c7e9f497fa9389ab226d24e14.r2.dev/video/Services_2.mp4",list:["UI UX Consulting","UX Research","Usability Testing","Wireframing","Prototyping"]},
+  { title:"Development", video:"https://pub-285dcb2c7e9f497fa9389ab226d24e14.r2.dev/video/Services_3.mp4", list:["WordPress","Webflow","Laravel Framework","React & Flutter","Design System"]},
+  { title:"Digital Marketing", video:"https://pub-285dcb2c7e9f497fa9389ab226d24e14.r2.dev/video/Services.mp4", list:["Online Marketing","SEO-Marketing","Strategy","Market Research","Social Reform"]}
 ];
 
 function renderServices(containerId){
